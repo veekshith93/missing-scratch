@@ -4,6 +4,8 @@ The Missing Scratch is a Visual Task Factory for Innodata Track 2. It asks wheth
 
 ## Open the demo
 
+Download [the browser demo](output/prototype.html) to try verified diagram pairs, reveal the ray path, and inspect archived model results. It uses pre-generated examples and runs offline. The Streamlit app below generates new tasks locally.
+
 Use Python 3.11. From this folder, install the Python dependencies and start Streamlit.
 
 ```sh
@@ -19,6 +21,16 @@ Open the local judge interface. [The Missing Scratch](http://127.0.0.1:8502)
 3. Open **Fresh layout** and generate a new seed or enter a seed to reproduce a layout.
 4. Open **Benchmark results** to compare archived runs. Select **GPT-6.1 Terra** to inspect a recorded vision error with the exact diagram and reply. The **Corrected challenge** tab tracks the new layout suite.
 5. Download the [A4 tabletop kit](output/print/mirror-setup.pdf) to recreate both settings and all six pilot tasks. [Physical and blind validation instructions](VALIDATION.md)
+
+### Deploy the browser demo on Vercel
+
+Import this GitHub repository as a Vercel project from its root. `vercel.json` copies the checked-in `output/prototype.html` to `dist/index.html`. The hosted demo uses the bundled images, verified answers, printable kit, and archived model results.
+
+Regenerate the browser export after changing the demo examples.
+
+```sh
+.venv/bin/python -m missing_scratch prototype
+```
 
 The saved replies and fresh geometry work with the local app offline. After recording the measured fixture and matching pilot frames, enable live requests with this launch command. Live evaluation uses an authenticated Codex CLI and sends generated diagrams and questions to its model provider. [Camera calibration](VALIDATION.md#recreate-the-tabletop-pilot)
 

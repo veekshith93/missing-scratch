@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Innodata Track 2 visual benchmark for mirror-based inspection coverage, geometry verification, and model evaluation.">
+  <meta property="og:title" content="The Missing Scratch">
+  <meta property="og:description" content="Predict a camera’s reflected view, reveal the verified light path, and explore recorded model results.">
+  <meta property="og:type" content="website">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src data:; style-src 'sha256-@@STYLE_HASH@@'; script-src 'sha256-@@SCRIPT_HASH@@'; base-uri 'none'; form-action 'none'">
+  <title>The Missing Scratch</title>
+  <style>
+    :root { color-scheme: light; --ink: #142736; --muted: #4b6373; --teal: #0d685e; --line: #cddddd; --accent: #edf6f3; }
+    * { box-sizing: border-box; }
+    body { margin: 0; color: var(--ink); background: #f5f8f7; font: 16px/1.55 system-ui, sans-serif; }
+    button, a { -webkit-tap-highlight-color: transparent; }
+    button, .link-button { font: inherit; font-size: .91rem; font-weight: 620; background: white; color: var(--ink); cursor: pointer; border: 1px solid var(--line); border-radius: 8px; padding: 9px 14px; text-decoration: none; min-height: 42px; }
+    button:hover, .link-button:hover { border-color: var(--teal); color: var(--teal); }
+    button[aria-pressed="true"] { color: #075c54; background: var(--accent); border-color: #7eb2a9; }
+    button:focus-visible, a:focus-visible { outline: 3px solid #0b7b70; outline-offset: 3px; }
+    .primary { background: var(--teal); color: white; border-color: var(--teal); }
+    .primary:hover { background: #084b44; color: white; }
+    [hidden] { display: none !important; }
+    .wrap { width: min(1180px, calc(100% - 48px)); margin-inline: auto; }
+    header { background: #fff; border-bottom: 1px solid var(--line); }
+    header .wrap { min-height: 62px; display: flex; gap: 12px; flex-wrap: wrap; align-items: center; justify-content: space-between; padding-block: 8px; }
+    .brand { display: flex; align-items: center; gap: 10px; font-size: .9rem; color: var(--muted); font-weight: 650; }
+    .mark { width: 19px; height: 19px; border: 2px solid var(--teal); border-top-width: 5px; border-radius: 4px; display: inline-block; transform: rotate(-20deg); }
+    nav, .actions { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+    .actions a, .actions button { display: inline-flex; align-items: center; justify-content: center; }
+    main { padding-block: 32px 56px; }
+    .intro { display: flex; align-items: end; justify-content: space-between; gap: 20px; flex-wrap: wrap; margin-bottom: 22px; }
+    h1 { font-size: clamp(2rem, 5vw, 3.25rem); margin: 0; line-height: 1.12; letter-spacing: -.055em; }
+    h2, h3 { line-height: 1.27; letter-spacing: -.02em; margin-block: 0 14px; }
+    p { margin-block: 0 12px; }
+    .intro p { color: var(--muted); margin-block: 8px 0; }
+    .layout { display: grid; grid-template-columns: minmax(0, 1.85fr) minmax(285px, 1fr); gap: 20px; align-items: start; margin-top: 14px; }
+    .card { min-width: 0; border: 1px solid var(--line); border-radius: 13px; background: #fff; padding: 18px; }
+    figure { margin: 0; }
+    figcaption { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px; border-bottom: 1px solid var(--line); padding-bottom: 10px; }
+    img { display: block; width: 100%; height: auto; border-radius: 10px; }
+    #diagram { margin-top: 9px; max-height: 73vh; object-fit: contain; }
+    .muted { color: var(--muted); font-size: .9rem; }
+    .type { color: var(--teal); font-size: .81rem; font-weight: 730; margin: 14px 0 6px; }
+    #answer-panel { border-top: 1px solid var(--line); margin-top: 16px; padding-top: 14px; }
+    #task-actions { margin-top: 14px; }
+    #answer-heading { color: var(--teal); margin-bottom: 5px; }
+    #pair-score { margin-block: 16px 0; }
+    .results { display: grid; gap: 14px; }
+    .table-wrap { overflow: auto; }
+    table { width: 100%; border-collapse: collapse; text-align: left; font-size: .92rem; }
+    th, td { padding: 10px 12px; border-bottom: 1px solid var(--line); white-space: nowrap; }
+    td:nth-child(n+3), th:nth-child(n+3) { text-align: right; }
+    thead { background: var(--accent); }
+    .example { margin-top: 14px; }
+    #reply { white-space: pre-wrap; word-break: break-word; background: #f4f7f7; border-radius: 8px; padding: 9px 12px; }
+    dialog { color: var(--ink); width: min(1240px, 94vw); max-height: 94vh; overflow: auto; border: 1px solid var(--line); border-radius: 12px; }
+    dialog::backdrop { background: #0c2426aa; }
+    dialog img { margin-top: 12px; }
+    @media (max-width: 770px) { .wrap { width: min(1180px, calc(100% - 26px)); } main { padding-top: 22px; } .layout { grid-template-columns: 1fr; gap: 12px; } .card { padding: 12px; } }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <div class="brand"><span class="mark" aria-hidden="true"></span>Innodata · Visual Task Factory</div>
+      <nav aria-label="Demo views">
+        <button type="button" id="try-tab" aria-controls="try" aria-pressed="true">Try a task</button>
+        <button type="button" id="results-tab" aria-controls="results" aria-pressed="false">Model results</button>
+      </nav>
+    </div>
+  </header>
+  <main class="wrap">
+    <div class="intro">
+      <div>
+        <h1>The Missing Scratch</h1>
+        <p>Predict what an inspection camera can see through a mirror.</p>
+      </div>
+      <div class="actions">
+        <a class="link-button" href="https://github.com/veekshith93/missing-scratch">GitHub</a>
+        <a class="link-button" id="kit" download="mirror-setup.pdf">Print tabletop setup</a>
+      </div>
+    </div>
+    <section id="try" aria-label="Try a task">
+      <nav id="pairs" aria-label="Task pairs"></nav>
+      <div class="layout">
+        <figure class="card">
+          <figcaption>
+            <strong id="image-title">Inspection diagram</strong>
+            <button type="button" id="enlarge">Enlarge diagram</button>
+          </figcaption>
+          <img id="diagram" alt="Scaled top-view diagram of the camera, mirror, and marked part">
+        </figure>
+        <section class="card" aria-labelledby="question">
+          <nav id="variants" aria-label="Diagrams in this pair"></nav>
+          <p class="type" id="kind"></p>
+          <h2 id="question"></h2>
+          <div class="actions" id="choices" role="group" aria-label="Prediction options"></div>
+          <div class="actions" id="task-actions"></div>
+          <div id="answer-panel" hidden>
+            <h3 id="answer-heading" tabindex="-1"></h3>
+            <p id="explanation"></p>
+          </div>
+          <p class="muted" id="pair-score" aria-live="polite"></p>
+          <p class="muted" id="task-reference"></p>
+        </section>
+      </div>
+    </section>
+    <section id="results" class="results" hidden>
+      <div class="card">
+        <h2 id="results-heading" tabindex="-1">Recorded model results</h2>
+        <p class="muted">Archived synthetic runs. A pair counts only when both answers are correct.</p>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th scope="col">Model</th><th scope="col">Input</th><th scope="col">Tasks correct</th><th scope="col">Pairs correct</th><th scope="col">False passes</th></tr></thead>
+            <tbody id="scores"></tbody>
+          </table>
+        </div>
+      </div>
+      <div class="layout example">
+        <figure class="card">
+          <figcaption><strong>Archived vision example</strong><button type="button" id="result-reveal" aria-pressed="false">Show verified path</button></figcaption>
+          <img id="result-diagram" alt="Diagram shown to GPT-6.1 Terra in the archived visibility task" loading="lazy">
+        </figure>
+        <div class="card">
+          <h3>Reflection outside the camera’s view</h3>
+          <p id="result-question"></p>
+          <p class="muted">Raw GPT-6.1 Terra reply</p>
+          <pre id="reply"></pre>
+          <p id="example-explanation"></p>
+          <p class="muted" id="example-id"></p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <dialog id="image-dialog" aria-label="Enlarged diagram">
+    <button type="button" id="close-diagram">Close</button>
+    <img id="large-diagram" alt="Enlarged inspection diagram">
+  </dialog>
+  <noscript>Enable JavaScript to switch tasks and reveal answers.</noscript>
+  <script id="demo-data" type="application/json">@@PAYLOAD@@</script>
+  <script>
+    "use strict";
+    const get = id => document.getElementById(id);
+    const data = JSON.parse(get("demo-data").textContent);
+    const answers = new Map();
+    let group = 0;
+    let variant = 0;
+    let selected = null;
+    let exampleRevealed = false;
+    const capital = text => text.length === 1 ? text : text[0].toUpperCase() + text.slice(1).toLowerCase();
+    const pair = () => data.pairs[group];
+    const task = () => pair().tasks[variant];
+
+    function button(label, action, pressed) {
+      const control = document.createElement("button");
+      control.type = "button";
+      control.textContent = label;
+      if (pressed !== undefined) control.setAttribute("aria-pressed", String(pressed));
+      control.addEventListener("click", action);
+      return control;
+    }
+
+    function render() {
+      const active = task();
+      const revealed = answers.has(active.id);
+      get("pairs").replaceChildren(...data.pairs.map((item, index) => button(item.name, () => {
+        group = index;
+        variant = 0;
+        selected = null;
+        render();
+        get("pairs").children[index].focus();
+      }, index === group)));
+      get("variants").replaceChildren(...pair().tasks.map((_, index) => button(`Diagram ${index + 1}`, () => {
+        variant = index;
+        selected = null;
+        render();
+        get("variants").children[index].focus();
+      }, index === variant)));
+      get("kind").textContent = capital(active.kind);
+      get("question").textContent = active.question;
+      get("image-title").textContent = revealed ? "Verified geometry" : "Inspection diagram";
+      get("diagram").alt = revealed ? "Top-view inspection diagram with the verified reflection and visibility outcome" : "Scaled top-view diagram of the camera, mirror, and marked part";
+      get("diagram").src = revealed ? active.reveal : active.diagram;
+      get("choices").replaceChildren(...active.choices.map((choice, index) => {
+        const option = button(capital(choice), () => {
+          selected = choice;
+          render();
+          get("choices").children[index].focus();
+        }, choice === (revealed ? answers.get(active.id) : selected));
+        option.disabled = revealed;
+        return option;
+      }));
+      const action = revealed ? button("Next diagram", () => {
+        variant = 1 - variant;
+        selected = null;
+        render();
+        get("variants").children[variant].focus();
+      }) : button("Reveal answer", () => {
+        answers.set(active.id, selected);
+        render();
+        get("answer-heading").focus();
+      });
+      action.className = "primary";
+      get("task-actions").replaceChildren(action);
+      get("answer-panel").hidden = !revealed;
+      get("answer-heading").textContent = revealed ? `Reference answer · ${capital(active.answer)}` : "";
+      get("explanation").textContent = revealed ? active.explanation : "";
+      const completed = pair().tasks.filter(item => answers.has(item.id));
+      const correct = completed.filter(item => answers.get(item.id) === item.answer).length;
+      get("pair-score").textContent = completed.length === 2 ? `${correct}/2 correct · ${correct === 2 ? "Pair passed" : "Pair missed"}` : "Make a prediction for both diagrams to score this pair.";
+      get("task-reference").textContent = `Seed ${pair().seed} · ${active.id}`;
+      if (completed.length) get("task-actions").append(button("Reset pair", () => {
+        pair().tasks.forEach(item => answers.delete(item.id));
+        selected = null;
+        render();
+        get("task-actions").firstElementChild.focus();
+      }));
+    }
+
+    function showResults(show) {
+      get("try").hidden = show;
+      get("results").hidden = !show;
+      get("try-tab").setAttribute("aria-pressed", String(!show));
+      get("results-tab").setAttribute("aria-pressed", String(show));
+      if (show) get("results-heading").focus();
+    }
+
+    get("try-tab").addEventListener("click", () => showResults(false));
+    get("results-tab").addEventListener("click", () => showResults(true));
+    get("kit").href = data.printKit;
+    get("enlarge").addEventListener("click", () => {
+      get("large-diagram").src = get("diagram").src;
+      get("image-dialog").showModal();
+    });
+    get("close-diagram").addEventListener("click", () => get("image-dialog").close());
+    get("scores").replaceChildren(...data.results.map(run => {
+      const row = document.createElement("tr");
+      for (const value of [run.model, run.input, `${run.right}/${run.total}`, `${run.pairs}/${run.pair_total}`, `${run.false_passes}/${run.hidden}`]) {
+        const cell = document.createElement("td");
+        cell.textContent = value;
+        row.append(cell);
+      }
+      return row;
+    }));
+    const example = data.example;
+    get("result-diagram").src = example.diagram;
+    get("result-question").textContent = example.question;
+    get("reply").textContent = example.reply;
+    get("example-explanation").textContent = `Reference ${capital(example.answer)}. ${example.explanation}`;
+    get("example-id").textContent = `Task ${example.id}`;
+    get("result-reveal").addEventListener("click", () => {
+      exampleRevealed = !exampleRevealed;
+      get("result-diagram").src = exampleRevealed ? example.reveal : example.diagram;
+      get("result-reveal").setAttribute("aria-pressed", String(exampleRevealed));
+      get("result-reveal").textContent = exampleRevealed ? "Show model input" : "Show verified path";
+    });
+    render();
+  </script>
+</body>
+</html>

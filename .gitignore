@@ -8,5 +8,7 @@ tmp/
 .env.*
 .streamlit/secrets.toml
 output/runs/
+/dist/
+/.vercel/
 evidence/captures/
 evidence/calibration.json

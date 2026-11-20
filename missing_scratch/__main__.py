@@ -29,6 +29,8 @@ def main(argv=None):
             sub.add_argument("--resume", action="store_true", help="continue unfinished requests in the same output")
             sub.add_argument("--request-limit", type=int, help="maximum new requests for this invocation")
     commands.add_parser("check-calibration", help="verify the measured pilot and linked camera outcomes")
+    prototype = commands.add_parser("prototype", help="export the self-contained browser demo")
+    prototype.add_argument("--output", type=Path, default=Path("output/prototype.html"))
     kit = commands.add_parser("print-kit", help="Write the print-ready tabletop setup")
     kit.add_argument("--output", type=Path, required=True, help="New PDF path")
     evidence = commands.add_parser("record", help="Record an actual camera observation for a pilot task")
@@ -39,6 +41,11 @@ def main(argv=None):
     evidence.add_argument("--capture", type=Path, required=True)
     args = parser.parse_args(argv)
     try:
+        if args.command == "prototype":
+            from .static_demo import export_prototype
+
+            print(export_prototype(Path(__file__).resolve().parents[1], args.output))
+            return
         if args.command == "print-kit":
             from .physical import print_kit
 
