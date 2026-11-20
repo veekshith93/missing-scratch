@@ -1,0 +1,2429 @@
+{
+  "schema": 1,
+  "dataset_id": "e2e6409ecc048baaf70bdd6421a6ec79ec7909366e5c6ea0603b52b1459128f6",
+  "suite": "heldout",
+  "seeds": [
+    43020,
+    77499,
+    16422,
+    89649
+  ],
+  "layout_count": 4,
+  "rejected_candidates": {
+    "43020": {
+      "alternate angle did not isolate requested failure": 23,
+      "blocker clearance margin": 2,
+      "field of view margin": 6,
+      "mirror edge margin": 3,
+      "reflective side margin": 6
+    },
+    "77499": {
+      "alternate angle did not isolate requested failure": 172,
+      "blocker intersects another component or leaves the drawing": 3,
+      "field of view margin": 39,
+      "layout outside drawing or coincident positions": 85,
+      "mirror edge margin": 23,
+      "no single-cause alternates on both sides": 7,
+      "reflective side margin": 26
+    },
+    "16422": {
+      "alternate angle did not isolate requested failure": 18,
+      "blocker intersects another component or leaves the drawing": 2,
+      "field of view margin": 6,
+      "mirror edge margin": 2,
+      "reflective side margin": 6
+    },
+    "89649": {
+      "alternate angle did not isolate requested failure": 26,
+      "field of view margin": 6,
+      "mirror edge margin": 4,
+      "reflective side margin": 7
+    }
+  },
+  "tasks": [
+    {
+      "id": "1b14f64dc75037ad",
+      "layout": "bab297c96029ec",
+      "pair": "3b808e77a1ed34",
+      "control": "mirror-angle",
+      "kind": "visibility",
+      "condition": "mirror edge miss",
+      "scenes": [
+        {
+          "camera": [
+            55,
+            26
+          ],
+          "yaw": 40.37227,
+          "half_fov": 28,
+          "target": [
+            226,
+            29
+          ],
+          "mirror": [
+            128,
+            103
+          ],
+          "length": 54,
+          "angle": 19,
+          "blockers": []
+        }
+      ],
+      "checks": [
+        {
+          "hit": [
+            89.01085907810412,
+            89.57496216214918
+          ],
+          "reasons": [
+            "mirror edge miss"
+          ],
+          "blocked": [],
+          "mirror_mm": -14.235721780698618,
+          "fov_deg": 6.517828038449295,
+          "obstacle_mm": null,
+          "side_mm": 49.03845504577495
+        }
+      ],
+      "choices": [
+        "YES",
+        "NO"
+      ],
+      "answer": "NO",
+      "tinted": false
+    },
+    {
+      "id": "b60ff1399589c0af",
+      "layout": "bab297c96029ec",
+      "pair": "3b808e77a1ed34",
+      "control": "mirror-angle",
+      "kind": "visibility",
+      "condition": "visible",
+      "scenes": [
+        {
+          "camera": [
+            55,
+            26
+          ],
+          "yaw": 40.37227,
+          "half_fov": 28,
+          "target": [
+            226,
+            29
+          ],
+          "mirror": [
+            128,
+            103
+          ],
+          "length": 54,
+          "angle": -1,
+          "blockers": []
+        }
+      ],
+      "checks": [
+        {
+          "hit": [
+            145.21014815288282,
+            102.69959574656718
+          ],
+          "reasons": [],
+          "blocked": [],
+          "mirror_mm": 9.787230258913688,
+          "fov_deg": 27.999997878352616,
+          "obstacle_mm": null,
+          "side_mm": 72.27839361071918
+        }
+      ],
+      "choices": [
+        "YES",
+        "NO"
+      ],
+      "answer": "YES",
+      "tinted": false
+    },
+    {
+      "id": "f4b82254cd4c6394",
+      "layout": "bab297c96029ec",
+      "pair": "d93947a70f632d",
+      "control": "obstruction-leg",
+      "kind": "obstruction",
+      "condition": "camera leg",
+      "scenes": [
+        {
+          "camera": [
+            55,
+            26
+          ],
+          "yaw": 40.37227,
+          "half_fov": 28,
+          "target": [
+            226,
+            29
+          ],
+          "mirror": [
+            128,
+            103
+          ],
+          "length": 54,
+          "angle": -1,
+          "blockers": [
+            {
+              "label": "C",
+              "center": [
+                110.39,
+                73.1
+              ],
+              "radius": 7
+            },
+            {
+              "label": "A",
+              "center": [
+                189,
+                134
+              ],
+              "radius": 6
+            },
+            {
+              "label": "B",
+              "center": [
+                154,
+                49
+              ],
+              "radius": 8
+            }
+          ]
+        }
+      ],
+      "checks": [
+        {
+          "hit": [
+            145.21014815288282,
+            102.69959574656718
+          ],
+          "reasons": [
+            "obstructed"
+          ],
+          "blocked": [
+            [
+              "C",
+              "camera leg"
+            ]
+          ],
+          "mirror_mm": 9.787230258913688,
+          "fov_deg": 27.999997878352616,
+          "obstacle_mm": 6.9957151106582955,
+          "side_mm": 72.27839361071918
+        }
+      ],
+      "choices": [
+        "A",
+        "B",
+        "C"
+      ],
+      "answer": "C",
+      "tinted": false
+    },
+    {
+      "id": "86882e4eea14a92f",
+      "layout": "bab297c96029ec",
+      "pair": "d93947a70f632d",
+      "control": "obstruction-leg",
+      "kind": "obstruction",
+      "condition": "target leg",
+      "scenes": [
+        {
+          "camera": [
+            55,
+            26
+          ],
+          "yaw": 40.37227,
+          "half_fov": 28,
+          "target": [
+            226,
+            29
+          ],
+          "mirror": [
+            128,
+            103
+          ],
+          "length": 54,
+          "angle": -1,
+          "blockers": [
+            {
+              "label": "B",
+              "center": [
+                181.82,
+                69.31
+              ],
+              "radius": 10
+            },
+            {
+              "label": "A",
+              "center": [
+                102,
+                79
+              ],
+              "radius": 6
+            },
+            {
+              "label": "C",
+              "center": [
+                173,
+                23
+              ],
+              "radius": 9
+            }
+          ]
+        }
+      ],
+      "checks": [
+        {
+          "hit": [
+            145.21014815288282,
+            102.69959574656718
+          ],
+          "reasons": [
+            "obstructed"
+          ],
+          "blocked": [
+            [
+              "B",
+              "target leg"
+            ]
+          ],
+          "mirror_mm": 9.787230258913688,
+          "fov_deg": 27.999997878352616,
+          "obstacle_mm": 3.933844014233486,
+          "side_mm": 72.27839361071918
+        }
+      ],
+      "choices": [
+        "A",
+        "B",
+        "C"
+      ],
+      "answer": "B",
+      "tinted": false
+    },
+    {
+      "id": "86f3098a14eb4c5f",
+      "layout": "bab297c96029ec",
+      "pair": "76bb90bb37a8c7",
+      "control": "repair-options",
+      "kind": "repair",
+      "condition": "mirror edge miss",
+      "scenes": [
+        {
+          "camera": [
+            55,
+            26
+          ],
+          "yaw": 40.37227,
+          "half_fov": 28,
+          "target": [
+            226,
+            29
+          ],
+          "mirror": [
+            128,
+            103
+          ],
+          "length": 54,
+          "angle": -9,
+          "blockers": []
+        },
+        {
+          "camera": [
+            55,
+            26
+          ],
+          "yaw": 40.37227,
+          "half_fov": 28,
+          "target": [
+            226,
+            29
+          ],
+          "mirror": [
+            128,
+            103
+          ],
+          "length": 54,
+          "angle": -1,
+          "blockers": []
+        },
+        {
+          "camera": [
+            55,
+            26
+          ],
+          "yaw": 40.37227,
+          "half_fov": 28,
+          "target": [
+            226,
+            29
+          ],
+          "mirror": [
+            128,
+            103
+          ],
+          "length": 54,
+          "angle": 17,
+          "blockers": []
+        }
+      ],
+      "checks": [
+        {
+          "hit": [
+            168.87687487670672,
+            96.52573905043671
+          ],
+          "reasons": [
+            "mirror edge miss"
+          ],
+          "blocked": [],
+          "mirror_mm": -14.38641026386533,
+          "fov_deg": 19.39831414546299,
+          "obstacle_mm": null,
+          "side_mm": 57.758359630097566
+        },
+        {
+          "hit": [
+            145.21014815288282,
+            102.69959574656718
+          ],
+          "reasons": [],
+          "blocked": [],
+          "mirror_mm": 9.787230258913688,
+          "fov_deg": 27.999997878352616,
+          "obstacle_mm": null,
+          "side_mm": 72.27839361071918
+        },
+        {
+          "hit": [
+            93.90280356112041,
+            92.57544089691152
+          ],
+          "reasons": [
+            "mirror edge miss"
+          ],
+          "blocked": [],
+          "mirror_mm": -8.655157235459328,
+          "fov_deg": 8.67179333120373,
+          "obstacle_mm": null,
+          "side_mm": 52.29233176439395
+        }
+      ],
+      "choices": [
+        "A",
+        "B",
+        "C"
+      ],
+      "answer": "B",
+      "tinted": false
+    },
+    {
+      "id": "ff39735deba4123b",
+      "layout": "bab297c96029ec",
+      "pair": "76bb90bb37a8c7",
+      "control": "repair-options",
+      "kind": "repair",
+      "condition": "mirror edge miss",
+      "scenes": [
+        {
+          "camera": [
+            55,
+            26
+          ],
+          "yaw": 40.37227,
+          "half_fov": 28,
+          "target": [
+            226,
+            29
+          ],
+          "mirror": [
+            128,
+            103
+          ],
+          "length": 54,
+          "angle": -1,
+          "blockers": []
+        },
+        {
+          "camera": [
+            55,
+            26
+          ],
+          "yaw": 40.37227,
+          "half_fov": 28,
+          "target": [
+            226,
+            29
+          ],
+          "mirror": [
+            128,
+            103
+          ],
+          "length": 54,
+          "angle": -23,
+          "blockers": []
+        },
+        {
+          "camera": [
+            55,
+            26
+          ],
+          "yaw": 40.37227,
+          "half_fov": 28,
+          "target": [
+            226,
+            29
+          ],
+          "mirror": [
+            128,
+            103
+          ],
+          "length": 54,
+          "angle": 21,
+          "blockers": []
+        }
+      ],
+      "checks": [
+        {
+          "hit": [
+            145.21014815288282,
+            102.69959574656718
+          ],
+          "reasons": [],
+          "blocked": [],
+          "mirror_mm": 9.787230258913688,
+          "fov_deg": 27.999997878352616,
+          "obstacle_mm": null,
+          "side_mm": 72.27839361071918
+        },
+        {
+          "hit": [
+            204.4616117559351,
+            70.54397140280929
+          ],
+          "reasons": [
+            "mirror edge miss"
+          ],
+          "blocked": [],
+          "mirror_mm": -56.064865404194904,
+          "fov_deg": 4.223339634180832,
+          "obstacle_mm": null,
+          "side_mm": 29.825708563531755
+        },
+        {
+          "hit": [
+            84.37289949545524,
+            86.25312516342981
+          ],
+          "reasons": [
+            "mirror edge miss"
+          ],
+          "blocked": [],
+          "mirror_mm": -19.73095029234262,
+          "fov_deg": 4.361120173442345,
+          "obstacle_mm": null,
+          "side_mm": 45.724832523477616
+        }
+      ],
+      "choices": [
+        "A",
+        "B",
+        "C"
+      ],
+      "answer": "A",
+      "tinted": false
+    },
+    {
+      "id": "f72e35961e1762ba",
+      "layout": "bab297c96029ec",
+      "pair": "74fc78abfab4e7",
+      "control": "cosmetic",
+      "kind": "visibility",
+      "condition": "mirror edge miss",
+      "scenes": [
+        {
+          "camera": [
+            55,
+            26
+          ],
+          "yaw": 40.37227,
+          "half_fov": 28,
+          "target": [
+            226,
+            29
+          ],
+          "mirror": [
+            128,
+            103
+          ],
+          "length": 54,
+          "angle": -9,
+          "blockers": []
+        }
+      ],
+      "checks": [
+        {
+          "hit": [
+            168.87687487670672,
+            96.52573905043671
+          ],
+          "reasons": [
+            "mirror edge miss"
+          ],
+          "blocked": [],
+          "mirror_mm": -14.38641026386533,
+          "fov_deg": 19.39831414546299,
+          "obstacle_mm": null,
+          "side_mm": 57.758359630097566
+        }
+      ],
+      "choices": [
+        "YES",
+        "NO"
+      ],
+      "answer": "NO",
+      "tinted": false
+    },
+    {
+      "id": "186b614be1eb09a9",
+      "layout": "bab297c96029ec",
+      "pair": "74fc78abfab4e7",
+      "control": "cosmetic",
+      "kind": "visibility",
+      "condition": "mirror edge miss",
+      "scenes": [
+        {
+          "camera": [
+            55,
+            26
+          ],
+          "yaw": 40.37227,
+          "half_fov": 28,
+          "target": [
+            226,
+            29
+          ],
+          "mirror": [
+            128,
+            103
+          ],
+          "length": 54,
+          "angle": -9,
+          "blockers": []
+        }
+      ],
+      "checks": [
+        {
+          "hit": [
+            168.87687487670672,
+            96.52573905043671
+          ],
+          "reasons": [
+            "mirror edge miss"
+          ],
+          "blocked": [],
+          "mirror_mm": -14.38641026386533,
+          "fov_deg": 19.39831414546299,
+          "obstacle_mm": null,
+          "side_mm": 57.758359630097566
+        }
+      ],
+      "choices": [
+        "YES",
+        "NO"
+      ],
+      "answer": "NO",
+      "tinted": true
+    },
+    {
+      "id": "ff262c2db7c35833",
+      "layout": "f07ab60676bba3",
+      "pair": "c99ce8bab6ec06",
+      "control": "mirror-angle",
+      "kind": "visibility",
+      "condition": "visible",
+      "scenes": [
+        {
+          "camera": [
+            215,
+            25
+          ],
+          "yaw": 133.371,
+          "half_fov": 9,
+          "target": [
+            62,
+            27
+          ],
+          "mirror": [
+            138,
+            99
+          ],
+          "length": 112,
+          "angle": -3,
+          "blockers": []
+        }
+      ],
+      "checks": [
+        {
+          "hit": [
+            145.46203792150203,
+            98.60893116360823
+          ],
+          "reasons": [],
+          "blocked": [],
+          "mirror_mm": 48.52772158062006,
+          "fov_deg": 8.999998561992072,
+          "obstacle_mm": null,
+          "side_mm": 69.8687169411318
+        }
+      ],
+      "choices": [
+        "YES",
+        "NO"
+      ],
+      "answer": "YES",
+      "tinted": false
+    },
+    {
+      "id": "2b4ed850ed67d642",
+      "layout": "f07ab60676bba3",
+      "pair": "c99ce8bab6ec06",
+      "control": "mirror-angle",
+      "kind": "visibility",
+      "condition": "outside field of view",
+      "scenes": [
+        {
+          "camera": [
+            215,
+            25
+          ],
+          "yaw": 133.371,
+          "half_fov": 9,
+          "target": [
+            62,
+            27
+          ],
+          "mirror": [
+            138,
+            99
+          ],
+          "length": 112,
+          "angle": -19,
+          "blockers": []
+        }
+      ],
+      "checks": [
+        {
+          "hit": [
+            184.82312965982769,
+            82.877503517479
+          ],
+          "reasons": [
+            "outside field of view"
+          ],
+          "blocked": [],
+          "mirror_mm": 6.478889713881237,
+          "fov_deg": -6.83382178306681,
+          "obstacle_mm": null,
+          "side_mm": 44.89962670114838
+        }
+      ],
+      "choices": [
+        "YES",
+        "NO"
+      ],
+      "answer": "NO",
+      "tinted": false
+    },
+    {
+      "id": "b038f6eb0e5c36d0",
+      "layout": "f07ab60676bba3",
+      "pair": "6237c29992e928",
+      "control": "obstruction-leg",
+      "kind": "obstruction",
+      "condition": "camera leg",
+      "scenes": [
+        {
+          "camera": [
+            215,
+            25
+          ],
+          "yaw": 133.371,
+          "half_fov": 9,
+          "target": [
+            62,
+            27
+          ],
+          "mirror": [
+            138,
+            99
+          ],
+          "length": 112,
+          "angle": -3,
+          "blockers": [
+            {
+              "label": "C",
+              "center": [
+                175.93,
+                66.36
+              ],
+              "radius": 8
+            },
+            {
+              "label": "B",
+              "center": [
+                211,
+                108
+              ],
+              "radius": 6
+            },
+            {
+              "label": "A",
+              "center": [
+                132,
+                112
+              ],
+              "radius": 6
+            }
+          ]
+        }
+      ],
+      "checks": [
+        {
+          "hit": [
+            145.46203792150203,
+            98.60893116360823
+          ],
+          "reasons": [
+            "obstructed"
+          ],
+          "blocked": [
+            [
+              "C",
+              "camera leg"
+            ]
+          ],
+          "mirror_mm": 48.52772158062006,
+          "fov_deg": 8.999998561992072,
+          "obstacle_mm": 7.998131848525431,
+          "side_mm": 69.8687169411318
+        }
+      ],
+      "choices": [
+        "A",
+        "B",
+        "C"
+      ],
+      "answer": "C",
+      "tinted": false
+    },
+    {
+      "id": "f31d1e793fec68e0",
+      "layout": "f07ab60676bba3",
+      "pair": "6237c29992e928",
+      "control": "obstruction-leg",
+      "kind": "obstruction",
+      "condition": "target leg",
+      "scenes": [
+        {
+          "camera": [
+            215,
+            25
+          ],
+          "yaw": 133.371,
+          "half_fov": 9,
+          "target": [
+            62,
+            27
+          ],
+          "mirror": [
+            138,
+            99
+          ],
+          "length": 112,
+          "angle": -3,
+          "blockers": [
+            {
+              "label": "B",
+              "center": [
+                109.15,
+                67.46
+              ],
+              "radius": 9
+            },
+            {
+              "label": "A",
+              "center": [
+                218,
+                59
+              ],
+              "radius": 8
+            },
+            {
+              "label": "C",
+              "center": [
+                195,
+                110
+              ],
+              "radius": 8
+            }
+          ]
+        }
+      ],
+      "checks": [
+        {
+          "hit": [
+            145.46203792150203,
+            98.60893116360823
+          ],
+          "reasons": [
+            "obstructed"
+          ],
+          "blocked": [
+            [
+              "B",
+              "target leg"
+            ]
+          ],
+          "mirror_mm": 48.52772158062006,
+          "fov_deg": 8.999998561992072,
+          "obstacle_mm": 8.995335614081519,
+          "side_mm": 69.8687169411318
+        }
+      ],
+      "choices": [
+        "A",
+        "B",
+        "C"
+      ],
+      "answer": "B",
+      "tinted": false
+    },
+    {
+      "id": "0829bdb5d84150b2",
+      "layout": "f07ab60676bba3",
+      "pair": "534f9f381958d6",
+      "control": "repair-options",
+      "kind": "repair",
+      "condition": "outside field of view",
+      "scenes": [
+        {
+          "camera": [
+            215,
+            25
+          ],
+          "yaw": 133.371,
+          "half_fov": 9,
+          "target": [
+            62,
+            27
+          ],
+          "mirror": [
+            138,
+            99
+          ],
+          "length": 112,
+          "angle": -3,
+          "blockers": []
+        },
+        {
+          "camera": [
+            215,
+            25
+          ],
+          "yaw": 133.371,
+          "half_fov": 9,
+          "target": [
+            62,
+            27
+          ],
+          "mirror": [
+            138,
+            99
+          ],
+          "length": 112,
+          "angle": -17,
+          "blockers": []
+        },
+        {
+          "camera": [
+            215,
+            25
+          ],
+          "yaw": 133.371,
+          "half_fov": 9,
+          "target": [
+            62,
+            27
+          ],
+          "mirror": [
+            138,
+            99
+          ],
+          "length": 112,
+          "angle": 11,
+          "blockers": []
+        }
+      ],
+      "checks": [
+        {
+          "hit": [
+            145.46203792150203,
+            98.60893116360823
+          ],
+          "reasons": [],
+          "blocked": [],
+          "mirror_mm": 48.52772158062006,
+          "fov_deg": 8.999998561992072,
+          "obstacle_mm": null,
+          "side_mm": 69.8687169411318
+        },
+        {
+          "hit": [
+            180.4550236871353,
+            86.02019667678854
+          ],
+          "reasons": [
+            "outside field of view"
+          ],
+          "blocked": [],
+          "mirror_mm": 11.605131708896003,
+          "fov_deg": -4.855773634977993,
+          "obstacle_mm": null,
+          "side_mm": 48.253930677613894
+        },
+        {
+          "hit": [
+            108.84514183279568,
+            93.3328696565925
+          ],
+          "reasons": [
+            "outside field of view"
+          ],
+          "blocked": [],
+          "mirror_mm": 26.299459246017577,
+          "fov_deg": -4.8592393777209395,
+          "obstacle_mm": null,
+          "side_mm": 56.175673559614395
+        }
+      ],
+      "choices": [
+        "A",
+        "B",
+        "C"
+      ],
+      "answer": "A",
+      "tinted": false
+    },
+    {
+      "id": "55847140b4d4fc20",
+      "layout": "f07ab60676bba3",
+      "pair": "534f9f381958d6",
+      "control": "repair-options",
+      "kind": "repair",
+      "condition": "outside field of view",
+      "scenes": [
+        {
+          "camera": [
+            215,
+            25
+          ],
+          "yaw": 133.371,
+          "half_fov": 9,
+          "target": [
+            62,
+            27
+          ],
+          "mirror": [
+            138,
+            99
+          ],
+          "length": 112,
+          "angle": -19,
+          "blockers": []
+        },
+        {
+          "camera": [
+            215,
+            25
+          ],
+          "yaw": 133.371,
+          "half_fov": 9,
+          "target": [
+            62,
+            27
+          ],
+          "mirror": [
+            138,
+            99
+          ],
+          "length": 112,
+          "angle": 19,
+          "blockers": []
+        },
+        {
+          "camera": [
+            215,
+            25
+          ],
+          "yaw": 133.371,
+          "half_fov": 9,
+          "target": [
+            62,
+            27
+          ],
+          "mirror": [
+            138,
+            99
+          ],
+          "length": 112,
+          "angle": -3,
+          "blockers": []
+        }
+      ],
+      "checks": [
+        {
+          "hit": [
+            184.82312965982769,
+            82.877503517479
+          ],
+          "reasons": [
+            "outside field of view"
+          ],
+          "blocked": [],
+          "mirror_mm": 6.478889713881237,
+          "fov_deg": -6.83382178306681,
+          "obstacle_mm": null,
+          "side_mm": 44.89962670114838
+        },
+        {
+          "hit": [
+            90.53566525117155,
+            82.65671889955419
+          ],
+          "reasons": [
+            "outside field of view"
+          ],
+          "blocked": [],
+          "mirror_mm": 5.800737950871891,
+          "fov_deg": -12.773593759318317,
+          "obstacle_mm": null,
+          "side_mm": 43.334157704406906
+        },
+        {
+          "hit": [
+            145.46203792150203,
+            98.60893116360823
+          ],
+          "reasons": [],
+          "blocked": [],
+          "mirror_mm": 48.52772158062006,
+          "fov_deg": 8.999998561992072,
+          "obstacle_mm": null,
+          "side_mm": 69.8687169411318
+        }
+      ],
+      "choices": [
+        "A",
+        "B",
+        "C"
+      ],
+      "answer": "C",
+      "tinted": false
+    },
+    {
+      "id": "dcb2d566d79e7a21",
+      "layout": "f07ab60676bba3",
+      "pair": "136699af0712cc",
+      "control": "cosmetic",
+      "kind": "visibility",
+      "condition": "visible",
+      "scenes": [
+        {
+          "camera": [
+            215,
+            25
+          ],
+          "yaw": 133.371,
+          "half_fov": 9,
+          "target": [
+            62,
+            27
+          ],
+          "mirror": [
+            138,
+            99
+          ],
+          "length": 112,
+          "angle": -1,
+          "blockers": []
+        }
+      ],
+      "checks": [
+        {
+          "hit": [
+            140.12508356468516,
+            98.96290652840054
+          ],
+          "reasons": [],
+          "blocked": [],
+          "mirror_mm": 53.8745927254923,
+          "fov_deg": 7.019922138734273,
+          "obstacle_mm": null,
+          "side_mm": 72.64489414590213
+        }
+      ],
+      "choices": [
+        "YES",
+        "NO"
+      ],
+      "answer": "YES",
+      "tinted": false
+    },
+    {
+      "id": "ef98919012d4d3e3",
+      "layout": "f07ab60676bba3",
+      "pair": "136699af0712cc",
+      "control": "cosmetic",
+      "kind": "visibility",
+      "condition": "visible",
+      "scenes": [
+        {
+          "camera": [
+            215,
+            25
+          ],
+          "yaw": 133.371,
+          "half_fov": 9,
+          "target": [
+            62,
+            27
+          ],
+          "mirror": [
+            138,
+            99
+          ],
+          "length": 112,
+          "angle": -1,
+          "blockers": []
+        }
+      ],
+      "checks": [
+        {
+          "hit": [
+            140.12508356468516,
+            98.96290652840054
+          ],
+          "reasons": [],
+          "blocked": [],
+          "mirror_mm": 53.8745927254923,
+          "fov_deg": 7.019922138734273,
+          "obstacle_mm": null,
+          "side_mm": 72.64489414590213
+        }
+      ],
+      "choices": [
+        "YES",
+        "NO"
+      ],
+      "answer": "YES",
+      "tinted": true
+    },
+    {
+      "id": "609552a99a661efa",
+      "layout": "a5ffed0c6eec02",
+      "pair": "f721546e45c8ac",
+      "control": "mirror-angle",
+      "kind": "visibility",
+      "condition": "mirror edge miss",
+      "scenes": [
+        {
+          "camera": [
+            41,
+            34
+          ],
+          "yaw": 33.69007,
+          "half_fov": 26,
+          "target": [
+            233,
+            42
+          ],
+          "mirror": [
+            142,
+            102
+          ],
+          "length": 61,
+          "angle": -22,
+          "blockers": []
+        }
+      ],
+      "checks": [
+        {
+          "hit": [
+            212.51551223510074,
+            73.50988372881942
+          ],
+          "reasons": [
+            "mirror edge miss"
+          ],
+          "blocked": [],
+          "mirror_mm": -45.553429843262364,
+          "fov_deg": 5.282146832382551,
+          "obstacle_mm": null,
+          "side_mm": 21.541831273159247
+        }
+      ],
+      "choices": [
+        "YES",
+        "NO"
+      ],
+      "answer": "NO",
+      "tinted": false
+    },
+    {
+      "id": "94d2d58debbfd752",
+      "layout": "a5ffed0c6eec02",
+      "pair": "f721546e45c8ac",
+      "control": "mirror-angle",
+      "kind": "visibility",
+      "condition": "visible",
+      "scenes": [
+        {
+          "camera": [
+            41,
+            34
+          ],
+          "yaw": 33.69007,
+          "half_fov": 26,
+          "target": [
+            233,
+            42
+          ],
+          "mirror": [
+            142,
+            102
+          ],
+          "length": 61,
+          "angle": 0,
+          "blockers": []
+        }
+      ],
+      "checks": [
+        {
+          "hit": [
+            143.0,
+            102.0
+          ],
+          "reasons": [],
+          "blocked": [],
+          "mirror_mm": 29.5,
+          "fov_deg": 25.99999752597978,
+          "obstacle_mm": null,
+          "side_mm": 60.0
+        }
+      ],
+      "choices": [
+        "YES",
+        "NO"
+      ],
+      "answer": "YES",
+      "tinted": false
+    },
+    {
+      "id": "ca09ec0ad0952485",
+      "layout": "a5ffed0c6eec02",
+      "pair": "65b4aaeb95c4ed",
+      "control": "obstruction-leg",
+      "kind": "obstruction",
+      "condition": "camera leg",
+      "scenes": [
+        {
+          "camera": [
+            41,
+            34
+          ],
+          "yaw": 33.69007,
+          "half_fov": 26,
+          "target": [
+            233,
+            42
+          ],
+          "mirror": [
+            142,
+            102
+          ],
+          "length": 61,
+          "angle": 0,
+          "blockers": [
+            {
+              "label": "A",
+              "center": [
+                98.49,
+                72.33
+              ],
+              "radius": 7
+            },
+            {
+              "label": "B",
+              "center": [
+                133,
+                133
+              ],
+              "radius": 8
+            },
+            {
+              "label": "C",
+              "center": [
+                189,
+                114
+              ],
+              "radius": 9
+            }
+          ]
+        }
+      ],
+      "checks": [
+        {
+          "hit": [
+            143.0,
+            102.0
+          ],
+          "reasons": [
+            "obstructed"
+          ],
+          "blocked": [
+            [
+              "A",
+              "camera leg"
+            ]
+          ],
+          "mirror_mm": 29.5,
+          "fov_deg": 25.99999752597978,
+          "obstacle_mm": 6.997226499018873,
+          "side_mm": 60.0
+        }
+      ],
+      "choices": [
+        "A",
+        "B",
+        "C"
+      ],
+      "answer": "A",
+      "tinted": false
+    },
+    {
+      "id": "0d26847e077e4af9",
+      "layout": "a5ffed0c6eec02",
+      "pair": "65b4aaeb95c4ed",
+      "control": "obstruction-leg",
+      "kind": "obstruction",
+      "condition": "target leg",
+      "scenes": [
+        {
+          "camera": [
+            41,
+            34
+          ],
+          "yaw": 33.69007,
+          "half_fov": 26,
+          "target": [
+            233,
+            42
+          ],
+          "mirror": [
+            142,
+            102
+          ],
+          "length": 61,
+          "angle": 0,
+          "blockers": [
+            {
+              "label": "C",
+              "center": [
+                179.51,
+                77.66
+              ],
+              "radius": 8
+            },
+            {
+              "label": "A",
+              "center": [
+                37,
+                22
+              ],
+              "radius": 8
+            },
+            {
+              "label": "B",
+              "center": [
+                192,
+                132
+              ],
+              "radius": 7
+            }
+          ]
+        }
+      ],
+      "checks": [
+        {
+          "hit": [
+            143.0,
+            102.0
+          ],
+          "reasons": [
+            "obstructed"
+          ],
+          "blocked": [
+            [
+              "C",
+              "target leg"
+            ]
+          ],
+          "mirror_mm": 29.5,
+          "fov_deg": 25.99999752597978,
+          "obstacle_mm": 4.649110640673518,
+          "side_mm": 60.0
+        }
+      ],
+      "choices": [
+        "A",
+        "B",
+        "C"
+      ],
+      "answer": "C",
+      "tinted": false
+    },
+    {
+      "id": "4ccbdabc1a4b0369",
+      "layout": "a5ffed0c6eec02",
+      "pair": "1ce3117ceb452e",
+      "control": "repair-options",
+      "kind": "repair",
+      "condition": "mirror edge miss",
+      "scenes": [
+        {
+          "camera": [
+            41,
+            34
+          ],
+          "yaw": 33.69007,
+          "half_fov": 26,
+          "target": [
+            233,
+            42
+          ],
+          "mirror": [
+            142,
+            102
+          ],
+          "length": 61,
+          "angle": 10,
+          "blockers": []
+        },
+        {
+          "camera": [
+            41,
+            34
+          ],
+          "yaw": 33.69007,
+          "half_fov": 26,
+          "target": [
+            233,
+            42
+          ],
+          "mirror": [
+            142,
+            102
+          ],
+          "length": 61,
+          "angle": -10,
+          "blockers": []
+        },
+        {
+          "camera": [
+            41,
+            34
+          ],
+          "yaw": 33.69007,
+          "half_fov": 26,
+          "target": [
+            233,
+            42
+          ],
+          "mirror": [
+            142,
+            102
+          ],
+          "length": 61,
+          "angle": 0,
+          "blockers": []
+        }
+      ],
+      "checks": [
+        {
+          "hit": [
+            106.99696514745169,
+            95.82802054881698
+          ],
+          "reasons": [
+            "mirror edge miss"
+          ],
+          "blocked": [],
+          "mirror_mm": -5.043013086041775,
+          "fov_deg": 16.5580795295555,
+          "obstacle_mm": null,
+          "side_mm": 49.42846126047018
+        },
+        {
+          "hit": [
+            177.90561477421377,
+            95.66887135638163
+          ],
+          "reasons": [
+            "mirror edge miss"
+          ],
+          "blocked": [],
+          "mirror_mm": -5.959516757854637,
+          "fov_deg": 16.5590215169735,
+          "obstacle_mm": null,
+          "side_mm": 43.28648101304182
+        },
+        {
+          "hit": [
+            143.0,
+            102.0
+          ],
+          "reasons": [],
+          "blocked": [],
+          "mirror_mm": 29.5,
+          "fov_deg": 25.99999752597978,
+          "obstacle_mm": null,
+          "side_mm": 60.0
+        }
+      ],
+      "choices": [
+        "A",
+        "B",
+        "C"
+      ],
+      "answer": "C",
+      "tinted": false
+    },
+    {
+      "id": "dfb2751fb75e39d3",
+      "layout": "a5ffed0c6eec02",
+      "pair": "1ce3117ceb452e",
+      "control": "repair-options",
+      "kind": "repair",
+      "condition": "mirror edge miss",
+      "scenes": [
+        {
+          "camera": [
+            41,
+            34
+          ],
+          "yaw": 33.69007,
+          "half_fov": 26,
+          "target": [
+            233,
+            42
+          ],
+          "mirror": [
+            142,
+            102
+          ],
+          "length": 61,
+          "angle": -24,
+          "blockers": []
+        },
+        {
+          "camera": [
+            41,
+            34
+          ],
+          "yaw": 33.69007,
+          "half_fov": 26,
+          "target": [
+            233,
+            42
+          ],
+          "mirror": [
+            142,
+            102
+          ],
+          "length": 61,
+          "angle": 0,
+          "blockers": []
+        },
+        {
+          "camera": [
+            41,
+            34
+          ],
+          "yaw": 33.69007,
+          "half_fov": 26,
+          "target": [
+            233,
+            42
+          ],
+          "mirror": [
+            142,
+            102
+          ],
+          "length": 61,
+          "angle": 24,
+          "blockers": []
+        }
+      ],
+      "checks": [
+        {
+          "hit": [
+            217.10571491724082,
+            68.56078128823916
+          ],
+          "reasons": [
+            "mirror edge miss"
+          ],
+          "blocked": [],
+          "mirror_mm": -51.713440271544556,
+          "fov_deg": 3.4131298000417303,
+          "obstacle_mm": null,
+          "side_mm": 17.799692938658232
+        },
+        {
+          "hit": [
+            143.0,
+            102.0
+          ],
+          "reasons": [],
+          "blocked": [],
+          "mirror_mm": 29.5,
+          "fov_deg": 25.99999752597978,
+          "obstacle_mm": null,
+          "side_mm": 60.0
+        },
+        {
+          "hit": [
+            62.867606430959526,
+            66.76798844593844
+          ],
+          "reasons": [
+            "mirror edge miss"
+          ],
+          "blocked": [],
+          "mirror_mm": -56.121188805690295,
+          "fov_deg": 3.4071004191459338,
+          "obstacle_mm": null,
+          "side_mm": 21.040690169041035
+        }
+      ],
+      "choices": [
+        "A",
+        "B",
+        "C"
+      ],
+      "answer": "B",
+      "tinted": false
+    },
+    {
+      "id": "376b41b06e66e58f",
+      "layout": "a5ffed0c6eec02",
+      "pair": "9f0e010ff2a2da",
+      "control": "cosmetic",
+      "kind": "visibility",
+      "condition": "mirror edge miss",
+      "scenes": [
+        {
+          "camera": [
+            41,
+            34
+          ],
+          "yaw": 33.69007,
+          "half_fov": 26,
+          "target": [
+            233,
+            42
+          ],
+          "mirror": [
+            142,
+            102
+          ],
+          "length": 61,
+          "angle": 10,
+          "blockers": []
+        }
+      ],
+      "checks": [
+        {
+          "hit": [
+            106.99696514745169,
+            95.82802054881698
+          ],
+          "reasons": [
+            "mirror edge miss"
+          ],
+          "blocked": [],
+          "mirror_mm": -5.043013086041775,
+          "fov_deg": 16.5580795295555,
+          "obstacle_mm": null,
+          "side_mm": 49.42846126047018
+        }
+      ],
+      "choices": [
+        "YES",
+        "NO"
+      ],
+      "answer": "NO",
+      "tinted": false
+    },
+    {
+      "id": "e1984efab3661608",
+      "layout": "a5ffed0c6eec02",
+      "pair": "9f0e010ff2a2da",
+      "control": "cosmetic",
+      "kind": "visibility",
+      "condition": "mirror edge miss",
+      "scenes": [
+        {
+          "camera": [
+            41,
+            34
+          ],
+          "yaw": 33.69007,
+          "half_fov": 26,
+          "target": [
+            233,
+            42
+          ],
+          "mirror": [
+            142,
+            102
+          ],
+          "length": 61,
+          "angle": 10,
+          "blockers": []
+        }
+      ],
+      "checks": [
+        {
+          "hit": [
+            106.99696514745169,
+            95.82802054881698
+          ],
+          "reasons": [
+            "mirror edge miss"
+          ],
+          "blocked": [],
+          "mirror_mm": -5.043013086041775,
+          "fov_deg": 16.5580795295555,
+          "obstacle_mm": null,
+          "side_mm": 49.42846126047018
+        }
+      ],
+      "choices": [
+        "YES",
+        "NO"
+      ],
+      "answer": "NO",
+      "tinted": true
+    },
+    {
+      "id": "83f2d0096d8e7b42",
+      "layout": "7f86a76609c064",
+      "pair": "6b3fef4adb1fc4",
+      "control": "mirror-angle",
+      "kind": "visibility",
+      "condition": "visible",
+      "scenes": [
+        {
+          "camera": [
+            210,
+            30
+          ],
+          "yaw": 137.56184,
+          "half_fov": 9,
+          "target": [
+            61,
+            28
+          ],
+          "mirror": [
+            133,
+            102
+          ],
+          "length": 101,
+          "angle": 2,
+          "blockers": []
+        }
+      ],
+      "checks": [
+        {
+          "hit": [
+            131.31951341582618,
+            101.94131611536011
+          ],
+          "reasons": [],
+          "blocked": [],
+          "mirror_mm": 48.81848908480955,
+          "fov_deg": 8.999998117592327,
+          "obstacle_mm": null,
+          "side_mm": 71.44215743683303
+        }
+      ],
+      "choices": [
+        "YES",
+        "NO"
+      ],
+      "answer": "YES",
+      "tinted": false
+    },
+    {
+      "id": "f639c8963cc97c61",
+      "layout": "7f86a76609c064",
+      "pair": "6b3fef4adb1fc4",
+      "control": "mirror-angle",
+      "kind": "visibility",
+      "condition": "outside field of view",
+      "scenes": [
+        {
+          "camera": [
+            210,
+            30
+          ],
+          "yaw": 137.56184,
+          "half_fov": 9,
+          "target": [
+            61,
+            28
+          ],
+          "mirror": [
+            133,
+            102
+          ],
+          "length": 101,
+          "angle": 16,
+          "blockers": []
+        }
+      ],
+      "checks": [
+        {
+          "hit": [
+            96.87946211323138,
+            91.64260242984291
+          ],
+          "reasons": [
+            "outside field of view"
+          ],
+          "blocked": [],
+          "mirror_mm": 12.923824813376982,
+          "fov_deg": -4.850935545455428,
+          "obstacle_mm": null,
+          "side_mm": 51.28747588061166
+        }
+      ],
+      "choices": [
+        "YES",
+        "NO"
+      ],
+      "answer": "NO",
+      "tinted": false
+    },
+    {
+      "id": "b6b731d0f4363a21",
+      "layout": "7f86a76609c064",
+      "pair": "3cd10389e6d415",
+      "control": "obstruction-leg",
+      "kind": "obstruction",
+      "condition": "camera leg",
+      "scenes": [
+        {
+          "camera": [
+            210,
+            30
+          ],
+          "yaw": 137.56184,
+          "half_fov": 9,
+          "target": [
+            61,
+            28
+          ],
+          "mirror": [
+            133,
+            102
+          ],
+          "length": 101,
+          "angle": 2,
+          "blockers": [
+            {
+              "label": "B",
+              "center": [
+                178.1,
+                59.17
+              ],
+              "radius": 9
+            },
+            {
+              "label": "A",
+              "center": [
+                163,
+                26
+              ],
+              "radius": 6
+            },
+            {
+              "label": "C",
+              "center": [
+                83,
+                129
+              ],
+              "radius": 7
+            }
+          ]
+        }
+      ],
+      "checks": [
+        {
+          "hit": [
+            131.31951341582618,
+            101.94131611536011
+          ],
+          "reasons": [
+            "obstructed"
+          ],
+          "blocked": [
+            [
+              "B",
+              "camera leg"
+            ]
+          ],
+          "mirror_mm": 48.81848908480955,
+          "fov_deg": 8.999998117592327,
+          "obstacle_mm": 8.998294665203156,
+          "side_mm": 71.44215743683303
+        }
+      ],
+      "choices": [
+        "A",
+        "B",
+        "C"
+      ],
+      "answer": "B",
+      "tinted": false
+    },
+    {
+      "id": "610078eb909ee0ce",
+      "layout": "7f86a76609c064",
+      "pair": "3cd10389e6d415",
+      "control": "obstruction-leg",
+      "kind": "obstruction",
+      "condition": "target leg",
+      "scenes": [
+        {
+          "camera": [
+            210,
+            30
+          ],
+          "yaw": 137.56184,
+          "half_fov": 9,
+          "target": [
+            61,
+            28
+          ],
+          "mirror": [
+            133,
+            102
+          ],
+          "length": 101,
+          "angle": 2,
+          "blockers": [
+            {
+              "label": "C",
+              "center": [
+                96.69,
+                65.53
+              ],
+              "radius": 9
+            },
+            {
+              "label": "A",
+              "center": [
+                139,
+                48
+              ],
+              "radius": 9
+            },
+            {
+              "label": "B",
+              "center": [
+                33,
+                106
+              ],
+              "radius": 9
+            }
+          ]
+        }
+      ],
+      "checks": [
+        {
+          "hit": [
+            131.31951341582618,
+            101.94131611536011
+          ],
+          "reasons": [
+            "obstructed"
+          ],
+          "blocked": [
+            [
+              "C",
+              "target leg"
+            ]
+          ],
+          "mirror_mm": 48.81848908480955,
+          "fov_deg": 8.999998117592327,
+          "obstacle_mm": 8.998767479463442,
+          "side_mm": 71.44215743683303
+        }
+      ],
+      "choices": [
+        "A",
+        "B",
+        "C"
+      ],
+      "answer": "C",
+      "tinted": false
+    },
+    {
+      "id": "9b73d079144a4025",
+      "layout": "7f86a76609c064",
+      "pair": "cb7d70b0fee248",
+      "control": "repair-options",
+      "kind": "repair",
+      "condition": "outside field of view",
+      "scenes": [
+        {
+          "camera": [
+            210,
+            30
+          ],
+          "yaw": 137.56184,
+          "half_fov": 9,
+          "target": [
+            61,
+            28
+          ],
+          "mirror": [
+            133,
+            102
+          ],
+          "length": 101,
+          "angle": -12,
+          "blockers": []
+        },
+        {
+          "camera": [
+            210,
+            30
+          ],
+          "yaw": 137.56184,
+          "half_fov": 9,
+          "target": [
+            61,
+            28
+          ],
+          "mirror": [
+            133,
+            102
+          ],
+          "length": 101,
+          "angle": 2,
+          "blockers": []
+        },
+        {
+          "camera": [
+            210,
+            30
+          ],
+          "yaw": 137.56184,
+          "half_fov": 9,
+          "target": [
+            61,
+            28
+          ],
+          "mirror": [
+            133,
+            102
+          ],
+          "length": 101,
+          "angle": 16,
+          "blockers": []
+        }
+      ],
+      "checks": [
+        {
+          "hit": [
+            166.74980728573152,
+            94.82625700631907
+          ],
+          "reasons": [
+            "outside field of view"
+          ],
+          "blocked": [],
+          "mirror_mm": 15.99620194292514,
+          "fov_deg": -4.851775757455471,
+          "obstacle_mm": null,
+          "side_mm": 54.41742705986654
+        },
+        {
+          "hit": [
+            131.31951341582618,
+            101.94131611536011
+          ],
+          "reasons": [],
+          "blocked": [],
+          "mirror_mm": 48.81848908480955,
+          "fov_deg": 8.999998117592327,
+          "obstacle_mm": null,
+          "side_mm": 71.44215743683303
+        },
+        {
+          "hit": [
+            96.87946211323138,
+            91.64260242984291
+          ],
+          "reasons": [
+            "outside field of view"
+          ],
+          "blocked": [],
+          "mirror_mm": 12.923824813376982,
+          "fov_deg": -4.850935545455428,
+          "obstacle_mm": null,
+          "side_mm": 51.28747588061166
+        }
+      ],
+      "choices": [
+        "A",
+        "B",
+        "C"
+      ],
+      "answer": "B",
+      "tinted": false
+    },
+    {
+      "id": "1f52815101e0c45b",
+      "layout": "7f86a76609c064",
+      "pair": "cb7d70b0fee248",
+      "control": "repair-options",
+      "kind": "repair",
+      "condition": "outside field of view",
+      "scenes": [
+        {
+          "camera": [
+            210,
+            30
+          ],
+          "yaw": 137.56184,
+          "half_fov": 9,
+          "target": [
+            61,
+            28
+          ],
+          "mirror": [
+            133,
+            102
+          ],
+          "length": 101,
+          "angle": 2,
+          "blockers": []
+        },
+        {
+          "camera": [
+            210,
+            30
+          ],
+          "yaw": 137.56184,
+          "half_fov": 9,
+          "target": [
+            61,
+            28
+          ],
+          "mirror": [
+            133,
+            102
+          ],
+          "length": 101,
+          "angle": -16,
+          "blockers": []
+        },
+        {
+          "camera": [
+            210,
+            30
+          ],
+          "yaw": 137.56184,
+          "half_fov": 9,
+          "target": [
+            61,
+            28
+          ],
+          "mirror": [
+            133,
+            102
+          ],
+          "length": 101,
+          "angle": 18,
+          "blockers": []
+        }
+      ],
+      "checks": [
+        {
+          "hit": [
+            131.31951341582618,
+            101.94131611536011
+          ],
+          "reasons": [],
+          "blocked": [],
+          "mirror_mm": 48.81848908480955,
+          "fov_deg": 8.999998117592327,
+          "obstacle_mm": null,
+          "side_mm": 71.44215743683303
+        },
+        {
+          "hit": [
+            175.86739106233577,
+            89.70797341335685
+          ],
+          "reasons": [
+            "outside field of view"
+          ],
+          "blocked": [],
+          "mirror_mm": 5.905077260993416,
+          "fov_deg": -8.807000779340171,
+          "obstacle_mm": null,
+          "side_mm": 47.98676570965003
+        },
+        {
+          "hit": [
+            92.52865180136396,
+            88.850061837163
+          ],
+          "reasons": [
+            "outside field of view"
+          ],
+          "blocked": [],
+          "mirror_mm": 7.945906205140766,
+          "fov_deg": -6.828492792756748,
+          "obstacle_mm": null,
+          "side_mm": 48.128958610845146
+        }
+      ],
+      "choices": [
+        "A",
+        "B",
+        "C"
+      ],
+      "answer": "A",
+      "tinted": false
+    },
+    {
+      "id": "70d0397107313a1b",
+      "layout": "7f86a76609c064",
+      "pair": "e05d394bf94eed",
+      "control": "cosmetic",
+      "kind": "visibility",
+      "condition": "visible",
+      "scenes": [
+        {
+          "camera": [
+            210,
+            30
+          ],
+          "yaw": 137.56184,
+          "half_fov": 9,
+          "target": [
+            61,
+            28
+          ],
+          "mirror": [
+            133,
+            102
+          ],
+          "length": 101,
+          "angle": 4,
+          "blockers": []
+        }
+      ],
+      "checks": [
+        {
+          "hit": [
+            126.13908659385544,
+            101.52023819848782
+          ],
+          "reasons": [],
+          "blocked": [],
+          "mirror_mm": 43.622332942573884,
+          "fov_deg": 7.020829032298934,
+          "obstacle_mm": null,
+          "side_mm": 68.79727360964996
+        }
+      ],
+      "choices": [
+        "YES",
+        "NO"
+      ],
+      "answer": "YES",
+      "tinted": false
+    },
+    {
+      "id": "830eccfe0e66e11e",
+      "layout": "7f86a76609c064",
+      "pair": "e05d394bf94eed",
+      "control": "cosmetic",
+      "kind": "visibility",
+      "condition": "visible",
+      "scenes": [
+        {
+          "camera": [
+            210,
+            30
+          ],
+          "yaw": 137.56184,
+          "half_fov": 9,
+          "target": [
+            61,
+            28
+          ],
+          "mirror": [
+            133,
+            102
+          ],
+          "length": 101,
+          "angle": 4,
+          "blockers": []
+        }
+      ],
+      "checks": [
+        {
+          "hit": [
+            126.13908659385544,
+            101.52023819848782
+          ],
+          "reasons": [],
+          "blocked": [],
+          "mirror_mm": 43.622332942573884,
+          "fov_deg": 7.020829032298934,
+          "obstacle_mm": null,
+          "side_mm": 68.79727360964996
+        }
+      ],
+      "choices": [
+        "YES",
+        "NO"
+      ],
+      "answer": "YES",
+      "tinted": true
+    }
+  ]
+}

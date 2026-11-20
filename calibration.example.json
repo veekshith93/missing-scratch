@@ -1,0 +1,17 @@
+{
+  "schema": 1,
+  "observer": null,
+  "recorded_utc": null,
+  "camera_settings": null,
+  "repeat_notes": null,
+  "camera_mm": [null, null],
+  "target_mm": [null, null],
+  "mirror_center_mm": [null, null],
+  "mirror_angles_deg": [null, null],
+  "printed_bar_mm": null,
+  "camera_yaw_deg": null,
+  "horizontal_fov_deg": null,
+  "mirror_width_mm": null,
+  "lens_height_mm": null,
+  "target_height_mm": null
+}

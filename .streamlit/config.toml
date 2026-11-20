@@ -1,0 +1,24 @@
+[server]
+address = "127.0.0.1"
+port = 8502
+headless = true
+enableCORS = true
+enableXsrfProtection = true
+maxUploadSize = 8
+maxMessageSize = 16
+
+[browser]
+gatherUsageStats = false
+
+[client]
+toolbarMode = "viewer"
+
+[theme]
+base = "light"
+primaryColor = "#11756C"
+backgroundColor = "#F7FAFA"
+secondaryBackgroundColor = "#EAF2F3"
+textColor = "#142736"
+font = "sans serif"
+showWidgetBorder = true
+baseRadius = "medium"

@@ -1,0 +1,382 @@
+{
+  "schema": 1,
+  "dataset_id": "8a9dd94d170b62be16e37393cc6285b41784e500a8de9cbe3ff78a16a98f8daa",
+  "suite": "pilot",
+  "seeds": [
+    2026
+  ],
+  "image_sha256": {
+    "d6516c647688895a": "6904d23878a9092a5a282355c4005d590818a6ae334cd3add38701deef84cf7b",
+    "33e766989e0ddaba": "a609852c89239c3d4cdd5b3d7787e557aefa89bf7437eb4821a4348a4aa2584b",
+    "5b2b15e1f7fe7f05": "583f578f4d769ba7a221f412b6c527354aaa9551057bea403d11e3a49c1925a2",
+    "4a37e282e46bdc99": "e8f8a4f1ca523d0df4102bae108e78cc0015771ced23fa47e7080bd5231e8d8d",
+    "ff935049159443bb": "57b27e5515efea46c809944a54c1f7f17e7f302a9e099a9ae86f5e395c91fbd6",
+    "0a102903271942ae": "4dc2b4d6b4b40c96d65ac6791972c14552f09960e5f68733a3a8596c95ca92e2"
+  },
+  "run": {
+    "model": "gpt-6.2-sol",
+    "mode": "vision",
+    "backend": "codex-cli 0.170.0",
+    "reasoning_effort": "low",
+    "started_utc": "2026-11-20T11:35:05.381568+00:00",
+    "timeout_seconds": 95,
+    "jobs": 2,
+    "order_seed": 9821,
+    "temperature": "provider default",
+    "input_policy": "question and answer format; one PNG for vision"
+  },
+  "summary": {
+    "correct": 6,
+    "total": 6,
+    "accuracy": 1.0,
+    "pair_correct": 3,
+    "pair_total": 3,
+    "pair_accuracy": 1.0,
+    "statuses": {
+      "correct": 6,
+      "incorrect": 0,
+      "parse_error": 0,
+      "request_error": 0,
+      "missing_reply": 0
+    }
+  },
+  "by_task": {
+    "obstruction": {
+      "correct": 2,
+      "total": 2,
+      "accuracy": 1.0,
+      "pair_correct": 1,
+      "pair_total": 1,
+      "pair_accuracy": 1.0,
+      "statuses": {
+        "correct": 2,
+        "incorrect": 0,
+        "parse_error": 0,
+        "request_error": 0,
+        "missing_reply": 0
+      }
+    },
+    "repair": {
+      "correct": 2,
+      "total": 2,
+      "accuracy": 1.0,
+      "pair_correct": 1,
+      "pair_total": 1,
+      "pair_accuracy": 1.0,
+      "statuses": {
+        "correct": 2,
+        "incorrect": 0,
+        "parse_error": 0,
+        "request_error": 0,
+        "missing_reply": 0
+      }
+    },
+    "visibility": {
+      "correct": 2,
+      "total": 2,
+      "accuracy": 1.0,
+      "pair_correct": 1,
+      "pair_total": 1,
+      "pair_accuracy": 1.0,
+      "statuses": {
+        "correct": 2,
+        "incorrect": 0,
+        "parse_error": 0,
+        "request_error": 0,
+        "missing_reply": 0
+      }
+    }
+  },
+  "by_control": {
+    "mirror-angle": {
+      "correct": 2,
+      "total": 2,
+      "accuracy": 1.0,
+      "pair_correct": 1,
+      "pair_total": 1,
+      "pair_accuracy": 1.0,
+      "statuses": {
+        "correct": 2,
+        "incorrect": 0,
+        "parse_error": 0,
+        "request_error": 0,
+        "missing_reply": 0
+      }
+    },
+    "obstruction-leg": {
+      "correct": 2,
+      "total": 2,
+      "accuracy": 1.0,
+      "pair_correct": 1,
+      "pair_total": 1,
+      "pair_accuracy": 1.0,
+      "statuses": {
+        "correct": 2,
+        "incorrect": 0,
+        "parse_error": 0,
+        "request_error": 0,
+        "missing_reply": 0
+      }
+    },
+    "repair-options": {
+      "correct": 2,
+      "total": 2,
+      "accuracy": 1.0,
+      "pair_correct": 1,
+      "pair_total": 1,
+      "pair_accuracy": 1.0,
+      "statuses": {
+        "correct": 2,
+        "incorrect": 0,
+        "parse_error": 0,
+        "request_error": 0,
+        "missing_reply": 0
+      }
+    }
+  },
+  "by_condition": {
+    "obstruction / camera leg": {
+      "correct": 1,
+      "total": 1,
+      "accuracy": 1.0,
+      "pair_correct": 0,
+      "pair_total": 0,
+      "pair_accuracy": null,
+      "statuses": {
+        "correct": 1,
+        "incorrect": 0,
+        "parse_error": 0,
+        "request_error": 0,
+        "missing_reply": 0
+      }
+    },
+    "obstruction / target leg": {
+      "correct": 1,
+      "total": 1,
+      "accuracy": 1.0,
+      "pair_correct": 0,
+      "pair_total": 0,
+      "pair_accuracy": null,
+      "statuses": {
+        "correct": 1,
+        "incorrect": 0,
+        "parse_error": 0,
+        "request_error": 0,
+        "missing_reply": 0
+      }
+    },
+    "repair / mirror edge miss": {
+      "correct": 2,
+      "total": 2,
+      "accuracy": 1.0,
+      "pair_correct": 0,
+      "pair_total": 0,
+      "pair_accuracy": null,
+      "statuses": {
+        "correct": 2,
+        "incorrect": 0,
+        "parse_error": 0,
+        "request_error": 0,
+        "missing_reply": 0
+      }
+    },
+    "visibility / mirror edge miss": {
+      "correct": 1,
+      "total": 1,
+      "accuracy": 1.0,
+      "pair_correct": 0,
+      "pair_total": 0,
+      "pair_accuracy": null,
+      "statuses": {
+        "correct": 1,
+        "incorrect": 0,
+        "parse_error": 0,
+        "request_error": 0,
+        "missing_reply": 0
+      }
+    },
+    "visibility / visible": {
+      "correct": 1,
+      "total": 1,
+      "accuracy": 1.0,
+      "pair_correct": 0,
+      "pair_total": 0,
+      "pair_accuracy": null,
+      "statuses": {
+        "correct": 1,
+        "incorrect": 0,
+        "parse_error": 0,
+        "request_error": 0,
+        "missing_reply": 0
+      }
+    }
+  },
+  "rows": [
+    {
+      "id": "d6516c647688895a",
+      "kind": "visibility",
+      "condition": "visible",
+      "pair": "cd76550e75312b",
+      "control": "mirror-angle",
+      "expected": "YES",
+      "parsed": "YES",
+      "status": "correct"
+    },
+    {
+      "id": "33e766989e0ddaba",
+      "kind": "visibility",
+      "condition": "mirror edge miss",
+      "pair": "cd76550e75312b",
+      "control": "mirror-angle",
+      "expected": "NO",
+      "parsed": "NO",
+      "status": "correct"
+    },
+    {
+      "id": "5b2b15e1f7fe7f05",
+      "kind": "obstruction",
+      "condition": "camera leg",
+      "pair": "5753c2cb54e1d7",
+      "control": "obstruction-leg",
+      "expected": "A",
+      "parsed": "A",
+      "status": "correct"
+    },
+    {
+      "id": "4a37e282e46bdc99",
+      "kind": "obstruction",
+      "condition": "target leg",
+      "pair": "5753c2cb54e1d7",
+      "control": "obstruction-leg",
+      "expected": "B",
+      "parsed": "B",
+      "status": "correct"
+    },
+    {
+      "id": "ff935049159443bb",
+      "kind": "repair",
+      "condition": "mirror edge miss",
+      "pair": "e649b9e332eeed",
+      "control": "repair-options",
+      "expected": "A",
+      "parsed": "A",
+      "status": "correct"
+    },
+    {
+      "id": "0a102903271942ae",
+      "kind": "repair",
+      "condition": "mirror edge miss",
+      "pair": "e649b9e332eeed",
+      "control": "repair-options",
+      "expected": "C",
+      "parsed": "C",
+      "status": "correct"
+    }
+  ],
+  "pairs": [
+    {
+      "id": "cd76550e75312b",
+      "kind": "visibility",
+      "control": "mirror-angle",
+      "members": [
+        "d6516c647688895a",
+        "33e766989e0ddaba"
+      ],
+      "correct": true
+    },
+    {
+      "id": "5753c2cb54e1d7",
+      "kind": "obstruction",
+      "control": "obstruction-leg",
+      "members": [
+        "5b2b15e1f7fe7f05",
+        "4a37e282e46bdc99"
+      ],
+      "correct": true
+    },
+    {
+      "id": "e649b9e332eeed",
+      "kind": "repair",
+      "control": "repair-options",
+      "members": [
+        "ff935049159443bb",
+        "0a102903271942ae"
+      ],
+      "correct": true
+    }
+  ],
+  "replies": {
+    "4a37e282e46bdc99": {
+      "raw_reply": "B",
+      "tool_item_types": [],
+      "usage": {
+        "input_tokens": 12608,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 5,
+        "reasoning_output_tokens": 0
+      },
+      "seconds": 8.646
+    },
+    "0a102903271942ae": {
+      "raw_reply": "C",
+      "tool_item_types": [],
+      "usage": {
+        "input_tokens": 13401,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 5,
+        "reasoning_output_tokens": 0
+      },
+      "seconds": 5.801
+    },
+    "ff935049159443bb": {
+      "raw_reply": "A",
+      "tool_item_types": [],
+      "usage": {
+        "input_tokens": 13399,
+        "cached_input_tokens": 4224,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 5,
+        "reasoning_output_tokens": 0
+      },
+      "seconds": 4.848
+    },
+    "33e766989e0ddaba": {
+      "raw_reply": "No",
+      "tool_item_types": [],
+      "usage": {
+        "input_tokens": 12604,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 70,
+        "reasoning_output_tokens": 63
+      },
+      "seconds": 6.473
+    },
+    "d6516c647688895a": {
+      "raw_reply": "Yes",
+      "tool_item_types": [],
+      "usage": {
+        "input_tokens": 12604,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 5,
+        "reasoning_output_tokens": 0
+      },
+      "seconds": 4.47
+    },
+    "5b2b15e1f7fe7f05": {
+      "raw_reply": "A",
+      "tool_item_types": [],
+      "usage": {
+        "input_tokens": 12610,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 63,
+        "reasoning_output_tokens": 56
+      },
+      "seconds": 7.054
+    }
+  }
+}

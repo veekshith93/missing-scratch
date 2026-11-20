@@ -1,0 +1,1158 @@
+{
+  "schema": 1,
+  "dataset_id": "e2e6409ecc048baaf70bdd6421a6ec79ec7909366e5c6ea0603b52b1459128f6",
+  "suite": "heldout",
+  "seeds": [
+    43020,
+    77499,
+    16422,
+    89649
+  ],
+  "image_sha256": {
+    "1b14f64dc75037ad": "7e586ba70ff836327f033810a611600b37463511fd580b60a53628d521192e86",
+    "b60ff1399589c0af": "b2c162bdb164f648c421470d8f8aa0e716e1ab841d9310717975daeffcad6220",
+    "f4b82254cd4c6394": "66ab489c472b943a6d15fcaf70ba2ef6899b6049bff2dfcb07dab129cb497f09",
+    "86882e4eea14a92f": "7bfcacae57f71c247897e18ef09174f573c7f91516c7a1dae8801c241b601469",
+    "86f3098a14eb4c5f": "499054819196495746f7c7108d0e4463d9562d59b3e468aeea9f269bb5afa39c",
+    "ff39735deba4123b": "3935023c78d9c748ba90af66b0ab6efbdf16847f92e2381e1e386fd066ac1c35",
+    "f72e35961e1762ba": "e861493f1cb43ef6fb8758dd7500cb659ec7b50a5bcdf7539a118da02edbc4d0",
+    "186b614be1eb09a9": "d9f92ac22f19f128f669976c55a49281cec7ede5805eb384f75554cd7487054e",
+    "ff262c2db7c35833": "1f723a6acef758f8e6314d896f672cca789b77f319ed1fa8f7e754f6a5205975",
+    "2b4ed850ed67d642": "ba64a114a40e30af5ecfa41f4e600417083218790bae3de9f6f277bb1d8dfd94",
+    "b038f6eb0e5c36d0": "fa1e2cfc90040c7e4f9a86beb1baeaccfd473acfef2d98f4eb02558f44ea3700",
+    "f31d1e793fec68e0": "f351855537036902bdbf5dd2bf38178a4db05ff82de17c8102271c88b0a2ec9c",
+    "0829bdb5d84150b2": "05259ffa28544ea4a27160d6ad04bd721c3936423be21bf7fda728484f7e278e",
+    "55847140b4d4fc20": "3a40f466094d8f67b2691c59d3194171863ed2e25e54c80040dc9dd0f0d5fea3",
+    "dcb2d566d79e7a21": "e0a671e60acf43e9588c2ecebc43133553b7c40069bd54b88bfdd1bd78aee7d1",
+    "ef98919012d4d3e3": "5cdc1939829b89b0ea25fab184471d2678f9c18ff08f35a4ad601be5beaaeb67",
+    "609552a99a661efa": "4a70bffef4c59af81bfc6cec0db349f681063ad39617d0a933c5e76fd0008fdd",
+    "94d2d58debbfd752": "cb158b1444911a0dcffd539fcdac1753675f7c8b8945403ffd53d0cadc4b62d3",
+    "ca09ec0ad0952485": "d33457ee5ce9c417ef097c06c85f12b2466f4d5aa5952690412d4bd2781e096f",
+    "0d26847e077e4af9": "b5c43969924f72ffbd430b8cb6f9e0b2bf14ba7dc5635ad1ab480e98df0d6f25",
+    "4ccbdabc1a4b0369": "c28a8addea939ddc8129072ca95a3b3f8a2890ae47f9cc7718c3483a6066bece",
+    "dfb2751fb75e39d3": "b111c75a8284780fb07420f95b6b4913dbfc350f8bb5bcdbccee7380ad52edc2",
+    "376b41b06e66e58f": "d74e90e031710e78c31c28a2f8edc1c5564f9dc9a9134ab6ea3bd7e59e174b1e",
+    "e1984efab3661608": "43c159e65ccdb7f1cc15501b3be57b5e9905336a60d4a2fb928c8a2bcf51fc83",
+    "83f2d0096d8e7b42": "c24a8d2e3b682975174f54316dcc507803f26b3b2636d2b4497315c16516f3a8",
+    "f639c8963cc97c61": "af75c373f3ec801b5eea3ecc216a712811751f5e014a94cfabb56134c1800c12",
+    "b6b731d0f4363a21": "c74751fc83ea95f565dbfb61ebfa89419ca9b386ea10f161762cd4d27ef2d5c7",
+    "610078eb909ee0ce": "715300e3421d4011cb4e685e1fb64a9039d2ca5b1acea07a7565a280acc4e064",
+    "9b73d079144a4025": "5ca2842e2127f7d223ea4fcfbc28a49a6cb6228de89b8fa510c6437ad15169eb",
+    "1f52815101e0c45b": "a05084f7dda342f901478df04d170e94d09e7af01fc48d5ed25694887172c37d",
+    "70d0397107313a1b": "c7b9a64a9d6a16894a7cab8199f3cfc0c64625a7a10f0b34a9bc23e4e095b096",
+    "830eccfe0e66e11e": "bf035455d81b2d7dd67d126f0ff094bf83b57c99abea81e8b4b84d41b4a03675"
+  },
+  "run": {
+    "model": "gpt-6.2-sol",
+    "mode": "vision",
+    "backend": "codex-cli 0.170.0",
+    "reasoning_effort": "low",
+    "started_utc": "2026-11-20T11:35:51.576456+00:00",
+    "timeout_seconds": 95,
+    "jobs": 3,
+    "order_seed": 9821,
+    "temperature": "provider default",
+    "input_policy": "question and answer format; one PNG for vision"
+  },
+  "summary": {
+    "correct": 32,
+    "total": 32,
+    "accuracy": 1.0,
+    "pair_correct": 16,
+    "pair_total": 16,
+    "pair_accuracy": 1.0,
+    "statuses": {
+      "correct": 32,
+      "incorrect": 0,
+      "parse_error": 0,
+      "request_error": 0,
+      "missing_reply": 0
+    }
+  },
+  "by_task": {
+    "obstruction": {
+      "correct": 8,
+      "total": 8,
+      "accuracy": 1.0,
+      "pair_correct": 4,
+      "pair_total": 4,
+      "pair_accuracy": 1.0,
+      "statuses": {
+        "correct": 8,
+        "incorrect": 0,
+        "parse_error": 0,
+        "request_error": 0,
+        "missing_reply": 0
+      }
+    },
+    "repair": {
+      "correct": 8,
+      "total": 8,
+      "accuracy": 1.0,
+      "pair_correct": 4,
+      "pair_total": 4,
+      "pair_accuracy": 1.0,
+      "statuses": {
+        "correct": 8,
+        "incorrect": 0,
+        "parse_error": 0,
+        "request_error": 0,
+        "missing_reply": 0
+      }
+    },
+    "visibility": {
+      "correct": 16,
+      "total": 16,
+      "accuracy": 1.0,
+      "pair_correct": 8,
+      "pair_total": 8,
+      "pair_accuracy": 1.0,
+      "statuses": {
+        "correct": 16,
+        "incorrect": 0,
+        "parse_error": 0,
+        "request_error": 0,
+        "missing_reply": 0
+      }
+    }
+  },
+  "by_control": {
+    "cosmetic": {
+      "correct": 8,
+      "total": 8,
+      "accuracy": 1.0,
+      "pair_correct": 4,
+      "pair_total": 4,
+      "pair_accuracy": 1.0,
+      "statuses": {
+        "correct": 8,
+        "incorrect": 0,
+        "parse_error": 0,
+        "request_error": 0,
+        "missing_reply": 0
+      }
+    },
+    "mirror-angle": {
+      "correct": 8,
+      "total": 8,
+      "accuracy": 1.0,
+      "pair_correct": 4,
+      "pair_total": 4,
+      "pair_accuracy": 1.0,
+      "statuses": {
+        "correct": 8,
+        "incorrect": 0,
+        "parse_error": 0,
+        "request_error": 0,
+        "missing_reply": 0
+      }
+    },
+    "obstruction-leg": {
+      "correct": 8,
+      "total": 8,
+      "accuracy": 1.0,
+      "pair_correct": 4,
+      "pair_total": 4,
+      "pair_accuracy": 1.0,
+      "statuses": {
+        "correct": 8,
+        "incorrect": 0,
+        "parse_error": 0,
+        "request_error": 0,
+        "missing_reply": 0
+      }
+    },
+    "repair-options": {
+      "correct": 8,
+      "total": 8,
+      "accuracy": 1.0,
+      "pair_correct": 4,
+      "pair_total": 4,
+      "pair_accuracy": 1.0,
+      "statuses": {
+        "correct": 8,
+        "incorrect": 0,
+        "parse_error": 0,
+        "request_error": 0,
+        "missing_reply": 0
+      }
+    }
+  },
+  "by_condition": {
+    "obstruction / camera leg": {
+      "correct": 4,
+      "total": 4,
+      "accuracy": 1.0,
+      "pair_correct": 0,
+      "pair_total": 0,
+      "pair_accuracy": null,
+      "statuses": {
+        "correct": 4,
+        "incorrect": 0,
+        "parse_error": 0,
+        "request_error": 0,
+        "missing_reply": 0
+      }
+    },
+    "obstruction / target leg": {
+      "correct": 4,
+      "total": 4,
+      "accuracy": 1.0,
+      "pair_correct": 0,
+      "pair_total": 0,
+      "pair_accuracy": null,
+      "statuses": {
+        "correct": 4,
+        "incorrect": 0,
+        "parse_error": 0,
+        "request_error": 0,
+        "missing_reply": 0
+      }
+    },
+    "repair / mirror edge miss": {
+      "correct": 4,
+      "total": 4,
+      "accuracy": 1.0,
+      "pair_correct": 0,
+      "pair_total": 0,
+      "pair_accuracy": null,
+      "statuses": {
+        "correct": 4,
+        "incorrect": 0,
+        "parse_error": 0,
+        "request_error": 0,
+        "missing_reply": 0
+      }
+    },
+    "repair / outside field of view": {
+      "correct": 4,
+      "total": 4,
+      "accuracy": 1.0,
+      "pair_correct": 0,
+      "pair_total": 0,
+      "pair_accuracy": null,
+      "statuses": {
+        "correct": 4,
+        "incorrect": 0,
+        "parse_error": 0,
+        "request_error": 0,
+        "missing_reply": 0
+      }
+    },
+    "visibility / mirror edge miss": {
+      "correct": 6,
+      "total": 6,
+      "accuracy": 1.0,
+      "pair_correct": 0,
+      "pair_total": 0,
+      "pair_accuracy": null,
+      "statuses": {
+        "correct": 6,
+        "incorrect": 0,
+        "parse_error": 0,
+        "request_error": 0,
+        "missing_reply": 0
+      }
+    },
+    "visibility / outside field of view": {
+      "correct": 2,
+      "total": 2,
+      "accuracy": 1.0,
+      "pair_correct": 0,
+      "pair_total": 0,
+      "pair_accuracy": null,
+      "statuses": {
+        "correct": 2,
+        "incorrect": 0,
+        "parse_error": 0,
+        "request_error": 0,
+        "missing_reply": 0
+      }
+    },
+    "visibility / visible": {
+      "correct": 8,
+      "total": 8,
+      "accuracy": 1.0,
+      "pair_correct": 0,
+      "pair_total": 0,
+      "pair_accuracy": null,
+      "statuses": {
+        "correct": 8,
+        "incorrect": 0,
+        "parse_error": 0,
+        "request_error": 0,
+        "missing_reply": 0
+      }
+    }
+  },
+  "rows": [
+    {
+      "id": "1b14f64dc75037ad",
+      "kind": "visibility",
+      "condition": "mirror edge miss",
+      "pair": "3b808e77a1ed34",
+      "control": "mirror-angle",
+      "expected": "NO",
+      "parsed": "NO",
+      "status": "correct"
+    },
+    {
+      "id": "b60ff1399589c0af",
+      "kind": "visibility",
+      "condition": "visible",
+      "pair": "3b808e77a1ed34",
+      "control": "mirror-angle",
+      "expected": "YES",
+      "parsed": "YES",
+      "status": "correct"
+    },
+    {
+      "id": "f4b82254cd4c6394",
+      "kind": "obstruction",
+      "condition": "camera leg",
+      "pair": "d93947a70f632d",
+      "control": "obstruction-leg",
+      "expected": "C",
+      "parsed": "C",
+      "status": "correct"
+    },
+    {
+      "id": "86882e4eea14a92f",
+      "kind": "obstruction",
+      "condition": "target leg",
+      "pair": "d93947a70f632d",
+      "control": "obstruction-leg",
+      "expected": "B",
+      "parsed": "B",
+      "status": "correct"
+    },
+    {
+      "id": "86f3098a14eb4c5f",
+      "kind": "repair",
+      "condition": "mirror edge miss",
+      "pair": "76bb90bb37a8c7",
+      "control": "repair-options",
+      "expected": "B",
+      "parsed": "B",
+      "status": "correct"
+    },
+    {
+      "id": "ff39735deba4123b",
+      "kind": "repair",
+      "condition": "mirror edge miss",
+      "pair": "76bb90bb37a8c7",
+      "control": "repair-options",
+      "expected": "A",
+      "parsed": "A",
+      "status": "correct"
+    },
+    {
+      "id": "f72e35961e1762ba",
+      "kind": "visibility",
+      "condition": "mirror edge miss",
+      "pair": "74fc78abfab4e7",
+      "control": "cosmetic",
+      "expected": "NO",
+      "parsed": "NO",
+      "status": "correct"
+    },
+    {
+      "id": "186b614be1eb09a9",
+      "kind": "visibility",
+      "condition": "mirror edge miss",
+      "pair": "74fc78abfab4e7",
+      "control": "cosmetic",
+      "expected": "NO",
+      "parsed": "NO",
+      "status": "correct"
+    },
+    {
+      "id": "ff262c2db7c35833",
+      "kind": "visibility",
+      "condition": "visible",
+      "pair": "c99ce8bab6ec06",
+      "control": "mirror-angle",
+      "expected": "YES",
+      "parsed": "YES",
+      "status": "correct"
+    },
+    {
+      "id": "2b4ed850ed67d642",
+      "kind": "visibility",
+      "condition": "outside field of view",
+      "pair": "c99ce8bab6ec06",
+      "control": "mirror-angle",
+      "expected": "NO",
+      "parsed": "NO",
+      "status": "correct"
+    },
+    {
+      "id": "b038f6eb0e5c36d0",
+      "kind": "obstruction",
+      "condition": "camera leg",
+      "pair": "6237c29992e928",
+      "control": "obstruction-leg",
+      "expected": "C",
+      "parsed": "C",
+      "status": "correct"
+    },
+    {
+      "id": "f31d1e793fec68e0",
+      "kind": "obstruction",
+      "condition": "target leg",
+      "pair": "6237c29992e928",
+      "control": "obstruction-leg",
+      "expected": "B",
+      "parsed": "B",
+      "status": "correct"
+    },
+    {
+      "id": "0829bdb5d84150b2",
+      "kind": "repair",
+      "condition": "outside field of view",
+      "pair": "534f9f381958d6",
+      "control": "repair-options",
+      "expected": "A",
+      "parsed": "A",
+      "status": "correct"
+    },
+    {
+      "id": "55847140b4d4fc20",
+      "kind": "repair",
+      "condition": "outside field of view",
+      "pair": "534f9f381958d6",
+      "control": "repair-options",
+      "expected": "C",
+      "parsed": "C",
+      "status": "correct"
+    },
+    {
+      "id": "dcb2d566d79e7a21",
+      "kind": "visibility",
+      "condition": "visible",
+      "pair": "136699af0712cc",
+      "control": "cosmetic",
+      "expected": "YES",
+      "parsed": "YES",
+      "status": "correct"
+    },
+    {
+      "id": "ef98919012d4d3e3",
+      "kind": "visibility",
+      "condition": "visible",
+      "pair": "136699af0712cc",
+      "control": "cosmetic",
+      "expected": "YES",
+      "parsed": "YES",
+      "status": "correct"
+    },
+    {
+      "id": "609552a99a661efa",
+      "kind": "visibility",
+      "condition": "mirror edge miss",
+      "pair": "f721546e45c8ac",
+      "control": "mirror-angle",
+      "expected": "NO",
+      "parsed": "NO",
+      "status": "correct"
+    },
+    {
+      "id": "94d2d58debbfd752",
+      "kind": "visibility",
+      "condition": "visible",
+      "pair": "f721546e45c8ac",
+      "control": "mirror-angle",
+      "expected": "YES",
+      "parsed": "YES",
+      "status": "correct"
+    },
+    {
+      "id": "ca09ec0ad0952485",
+      "kind": "obstruction",
+      "condition": "camera leg",
+      "pair": "65b4aaeb95c4ed",
+      "control": "obstruction-leg",
+      "expected": "A",
+      "parsed": "A",
+      "status": "correct"
+    },
+    {
+      "id": "0d26847e077e4af9",
+      "kind": "obstruction",
+      "condition": "target leg",
+      "pair": "65b4aaeb95c4ed",
+      "control": "obstruction-leg",
+      "expected": "C",
+      "parsed": "C",
+      "status": "correct"
+    },
+    {
+      "id": "4ccbdabc1a4b0369",
+      "kind": "repair",
+      "condition": "mirror edge miss",
+      "pair": "1ce3117ceb452e",
+      "control": "repair-options",
+      "expected": "C",
+      "parsed": "C",
+      "status": "correct"
+    },
+    {
+      "id": "dfb2751fb75e39d3",
+      "kind": "repair",
+      "condition": "mirror edge miss",
+      "pair": "1ce3117ceb452e",
+      "control": "repair-options",
+      "expected": "B",
+      "parsed": "B",
+      "status": "correct"
+    },
+    {
+      "id": "376b41b06e66e58f",
+      "kind": "visibility",
+      "condition": "mirror edge miss",
+      "pair": "9f0e010ff2a2da",
+      "control": "cosmetic",
+      "expected": "NO",
+      "parsed": "NO",
+      "status": "correct"
+    },
+    {
+      "id": "e1984efab3661608",
+      "kind": "visibility",
+      "condition": "mirror edge miss",
+      "pair": "9f0e010ff2a2da",
+      "control": "cosmetic",
+      "expected": "NO",
+      "parsed": "NO",
+      "status": "correct"
+    },
+    {
+      "id": "83f2d0096d8e7b42",
+      "kind": "visibility",
+      "condition": "visible",
+      "pair": "6b3fef4adb1fc4",
+      "control": "mirror-angle",
+      "expected": "YES",
+      "parsed": "YES",
+      "status": "correct"
+    },
+    {
+      "id": "f639c8963cc97c61",
+      "kind": "visibility",
+      "condition": "outside field of view",
+      "pair": "6b3fef4adb1fc4",
+      "control": "mirror-angle",
+      "expected": "NO",
+      "parsed": "NO",
+      "status": "correct"
+    },
+    {
+      "id": "b6b731d0f4363a21",
+      "kind": "obstruction",
+      "condition": "camera leg",
+      "pair": "3cd10389e6d415",
+      "control": "obstruction-leg",
+      "expected": "B",
+      "parsed": "B",
+      "status": "correct"
+    },
+    {
+      "id": "610078eb909ee0ce",
+      "kind": "obstruction",
+      "condition": "target leg",
+      "pair": "3cd10389e6d415",
+      "control": "obstruction-leg",
+      "expected": "C",
+      "parsed": "C",
+      "status": "correct"
+    },
+    {
+      "id": "9b73d079144a4025",
+      "kind": "repair",
+      "condition": "outside field of view",
+      "pair": "cb7d70b0fee248",
+      "control": "repair-options",
+      "expected": "B",
+      "parsed": "B",
+      "status": "correct"
+    },
+    {
+      "id": "1f52815101e0c45b",
+      "kind": "repair",
+      "condition": "outside field of view",
+      "pair": "cb7d70b0fee248",
+      "control": "repair-options",
+      "expected": "A",
+      "parsed": "A",
+      "status": "correct"
+    },
+    {
+      "id": "70d0397107313a1b",
+      "kind": "visibility",
+      "condition": "visible",
+      "pair": "e05d394bf94eed",
+      "control": "cosmetic",
+      "expected": "YES",
+      "parsed": "YES",
+      "status": "correct"
+    },
+    {
+      "id": "830eccfe0e66e11e",
+      "kind": "visibility",
+      "condition": "visible",
+      "pair": "e05d394bf94eed",
+      "control": "cosmetic",
+      "expected": "YES",
+      "parsed": "YES",
+      "status": "correct"
+    }
+  ],
+  "pairs": [
+    {
+      "id": "3b808e77a1ed34",
+      "kind": "visibility",
+      "control": "mirror-angle",
+      "members": [
+        "1b14f64dc75037ad",
+        "b60ff1399589c0af"
+      ],
+      "correct": true
+    },
+    {
+      "id": "d93947a70f632d",
+      "kind": "obstruction",
+      "control": "obstruction-leg",
+      "members": [
+        "f4b82254cd4c6394",
+        "86882e4eea14a92f"
+      ],
+      "correct": true
+    },
+    {
+      "id": "76bb90bb37a8c7",
+      "kind": "repair",
+      "control": "repair-options",
+      "members": [
+        "86f3098a14eb4c5f",
+        "ff39735deba4123b"
+      ],
+      "correct": true
+    },
+    {
+      "id": "74fc78abfab4e7",
+      "kind": "visibility",
+      "control": "cosmetic",
+      "members": [
+        "f72e35961e1762ba",
+        "186b614be1eb09a9"
+      ],
+      "correct": true
+    },
+    {
+      "id": "c99ce8bab6ec06",
+      "kind": "visibility",
+      "control": "mirror-angle",
+      "members": [
+        "ff262c2db7c35833",
+        "2b4ed850ed67d642"
+      ],
+      "correct": true
+    },
+    {
+      "id": "6237c29992e928",
+      "kind": "obstruction",
+      "control": "obstruction-leg",
+      "members": [
+        "b038f6eb0e5c36d0",
+        "f31d1e793fec68e0"
+      ],
+      "correct": true
+    },
+    {
+      "id": "534f9f381958d6",
+      "kind": "repair",
+      "control": "repair-options",
+      "members": [
+        "0829bdb5d84150b2",
+        "55847140b4d4fc20"
+      ],
+      "correct": true
+    },
+    {
+      "id": "136699af0712cc",
+      "kind": "visibility",
+      "control": "cosmetic",
+      "members": [
+        "dcb2d566d79e7a21",
+        "ef98919012d4d3e3"
+      ],
+      "correct": true
+    },
+    {
+      "id": "f721546e45c8ac",
+      "kind": "visibility",
+      "control": "mirror-angle",
+      "members": [
+        "609552a99a661efa",
+        "94d2d58debbfd752"
+      ],
+      "correct": true
+    },
+    {
+      "id": "65b4aaeb95c4ed",
+      "kind": "obstruction",
+      "control": "obstruction-leg",
+      "members": [
+        "ca09ec0ad0952485",
+        "0d26847e077e4af9"
+      ],
+      "correct": true
+    },
+    {
+      "id": "1ce3117ceb452e",
+      "kind": "repair",
+      "control": "repair-options",
+      "members": [
+        "4ccbdabc1a4b0369",
+        "dfb2751fb75e39d3"
+      ],
+      "correct": true
+    },
+    {
+      "id": "9f0e010ff2a2da",
+      "kind": "visibility",
+      "control": "cosmetic",
+      "members": [
+        "376b41b06e66e58f",
+        "e1984efab3661608"
+      ],
+      "correct": true
+    },
+    {
+      "id": "6b3fef4adb1fc4",
+      "kind": "visibility",
+      "control": "mirror-angle",
+      "members": [
+        "83f2d0096d8e7b42",
+        "f639c8963cc97c61"
+      ],
+      "correct": true
+    },
+    {
+      "id": "3cd10389e6d415",
+      "kind": "obstruction",
+      "control": "obstruction-leg",
+      "members": [
+        "b6b731d0f4363a21",
+        "610078eb909ee0ce"
+      ],
+      "correct": true
+    },
+    {
+      "id": "cb7d70b0fee248",
+      "kind": "repair",
+      "control": "repair-options",
+      "members": [
+        "9b73d079144a4025",
+        "1f52815101e0c45b"
+      ],
+      "correct": true
+    },
+    {
+      "id": "e05d394bf94eed",
+      "kind": "visibility",
+      "control": "cosmetic",
+      "members": [
+        "70d0397107313a1b",
+        "830eccfe0e66e11e"
+      ],
+      "correct": true
+    }
+  ],
+  "replies": {
+    "ef98919012d4d3e3": {
+      "raw_reply": "Yes",
+      "tool_item_types": [],
+      "usage": {
+        "input_tokens": 12604,
+        "cached_input_tokens": 9856,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 24,
+        "reasoning_output_tokens": 17
+      },
+      "seconds": 5.264
+    },
+    "0d26847e077e4af9": {
+      "raw_reply": "C",
+      "tool_item_types": [],
+      "usage": {
+        "input_tokens": 12608,
+        "cached_input_tokens": 9856,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 5,
+        "reasoning_output_tokens": 0
+      },
+      "seconds": 4.527
+    },
+    "830eccfe0e66e11e": {
+      "raw_reply": "Yes",
+      "tool_item_types": [],
+      "usage": {
+        "input_tokens": 12606,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 23,
+        "reasoning_output_tokens": 16
+      },
+      "seconds": 5.156
+    },
+    "83f2d0096d8e7b42": {
+      "raw_reply": "Yes",
+      "tool_item_types": [],
+      "usage": {
+        "input_tokens": 12606,
+        "cached_input_tokens": 9856,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 29,
+        "reasoning_output_tokens": 22
+      },
+      "seconds": 5.411
+    },
+    "0829bdb5d84150b2": {
+      "raw_reply": "A",
+      "tool_item_types": [],
+      "usage": {
+        "input_tokens": 13399,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 93,
+        "reasoning_output_tokens": 86
+      },
+      "seconds": 8.214
+    },
+    "186b614be1eb09a9": {
+      "raw_reply": "No",
+      "tool_item_types": [],
+      "usage": {
+        "input_tokens": 12606,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 82,
+        "reasoning_output_tokens": 75
+      },
+      "seconds": 7.421
+    },
+    "94d2d58debbfd752": {
+      "raw_reply": "Yes",
+      "tool_item_types": [],
+      "usage": {
+        "input_tokens": 12606,
+        "cached_input_tokens": 9856,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 26,
+        "reasoning_output_tokens": 19
+      },
+      "seconds": 8.723
+    },
+    "1b14f64dc75037ad": {
+      "raw_reply": "No",
+      "tool_item_types": [],
+      "usage": {
+        "input_tokens": 12606,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 76,
+        "reasoning_output_tokens": 69
+      },
+      "seconds": 6.411
+    },
+    "86f3098a14eb4c5f": {
+      "raw_reply": "B",
+      "tool_item_types": [],
+      "usage": {
+        "input_tokens": 13403,
+        "cached_input_tokens": 9856,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 85,
+        "reasoning_output_tokens": 78
+      },
+      "seconds": 7.836
+    },
+    "e1984efab3661608": {
+      "raw_reply": "No",
+      "tool_item_types": [],
+      "usage": {
+        "input_tokens": 12602,
+        "cached_input_tokens": 9856,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 87,
+        "reasoning_output_tokens": 80
+      },
+      "seconds": 6.403
+    },
+    "dcb2d566d79e7a21": {
+      "raw_reply": "Yes",
+      "tool_item_types": [],
+      "usage": {
+        "input_tokens": 12604,
+        "cached_input_tokens": 11136,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 26,
+        "reasoning_output_tokens": 19
+      },
+      "seconds": 7.741
+    },
+    "376b41b06e66e58f": {
+      "raw_reply": "No",
+      "tool_item_types": [],
+      "usage": {
+        "input_tokens": 12602,
+        "cached_input_tokens": 9856,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 53,
+        "reasoning_output_tokens": 46
+      },
+      "seconds": 6.241
+    },
+    "55847140b4d4fc20": {
+      "raw_reply": "C",
+      "tool_item_types": [],
+      "usage": {
+        "input_tokens": 13401,
+        "cached_input_tokens": 4224,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 57,
+        "reasoning_output_tokens": 50
+      },
+      "seconds": 7.896
+    },
+    "f639c8963cc97c61": {
+      "raw_reply": "No",
+      "tool_item_types": [],
+      "usage": {
+        "input_tokens": 12608,
+        "cached_input_tokens": 11136,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 64,
+        "reasoning_output_tokens": 57
+      },
+      "seconds": 7.305
+    },
+    "610078eb909ee0ce": {
+      "raw_reply": "C",
+      "tool_item_types": [],
+      "usage": {
+        "input_tokens": 12610,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 26,
+        "reasoning_output_tokens": 19
+      },
+      "seconds": 6.549
+    },
+    "b038f6eb0e5c36d0": {
+      "raw_reply": "C",
+      "tool_item_types": [],
+      "usage": {
+        "input_tokens": 12608,
+        "cached_input_tokens": 11136,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 5,
+        "reasoning_output_tokens": 0
+      },
+      "seconds": 4.945
+    },
+    "f31d1e793fec68e0": {
+      "raw_reply": "B",
+      "tool_item_types": [],
+      "usage": {
+        "input_tokens": 12612,
+        "cached_input_tokens": 9856,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 5,
+        "reasoning_output_tokens": 0
+      },
+      "seconds": 4.885
+    },
+    "dfb2751fb75e39d3": {
+      "raw_reply": "B",
+      "tool_item_types": [],
+      "usage": {
+        "input_tokens": 13401,
+        "cached_input_tokens": 9856,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 5,
+        "reasoning_output_tokens": 0
+      },
+      "seconds": 5.318
+    },
+    "1f52815101e0c45b": {
+      "raw_reply": "A",
+      "tool_item_types": [],
+      "usage": {
+        "input_tokens": 13401,
+        "cached_input_tokens": 9856,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 77,
+        "reasoning_output_tokens": 70
+      },
+      "seconds": 8.501
+    },
+    "ca09ec0ad0952485": {
+      "raw_reply": "A",
+      "tool_item_types": [],
+      "usage": {
+        "input_tokens": 12612,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 5,
+        "reasoning_output_tokens": 0
+      },
+      "seconds": 4.357
+    },
+    "ff262c2db7c35833": {
+      "raw_reply": "Yes",
+      "tool_item_types": [],
+      "usage": {
+        "input_tokens": 12604,
+        "cached_input_tokens": 11136,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 46,
+        "reasoning_output_tokens": 39
+      },
+      "seconds": 6.483
+    },
+    "f4b82254cd4c6394": {
+      "raw_reply": "C",
+      "tool_item_types": [],
+      "usage": {
+        "input_tokens": 12608,
+        "cached_input_tokens": 9856,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 5,
+        "reasoning_output_tokens": 0
+      },
+      "seconds": 5.335
+    },
+    "2b4ed850ed67d642": {
+      "raw_reply": "No",
+      "tool_item_types": [],
+      "usage": {
+        "input_tokens": 12606,
+        "cached_input_tokens": 11136,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 79,
+        "reasoning_output_tokens": 72
+      },
+      "seconds": 8.08
+    },
+    "f72e35961e1762ba": {
+      "raw_reply": "No",
+      "tool_item_types": [],
+      "usage": {
+        "input_tokens": 12610,
+        "cached_input_tokens": 9856,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 81,
+        "reasoning_output_tokens": 74
+      },
+      "seconds": 8.035
+    },
+    "b60ff1399589c0af": {
+      "raw_reply": "Yes",
+      "tool_item_types": [],
+      "usage": {
+        "input_tokens": 12608,
+        "cached_input_tokens": 4224,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 21,
+        "reasoning_output_tokens": 14
+      },
+      "seconds": 5.138
+    },
+    "609552a99a661efa": {
+      "raw_reply": "No",
+      "tool_item_types": [],
+      "usage": {
+        "input_tokens": 12608,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 71,
+        "reasoning_output_tokens": 64
+      },
+      "seconds": 6.912
+    },
+    "9b73d079144a4025": {
+      "raw_reply": "B",
+      "tool_item_types": [],
+      "usage": {
+        "input_tokens": 13399,
+        "cached_input_tokens": 4224,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 115,
+        "reasoning_output_tokens": 108
+      },
+      "seconds": 9.332
+    },
+    "70d0397107313a1b": {
+      "raw_reply": "Yes",
+      "tool_item_types": [],
+      "usage": {
+        "input_tokens": 12604,
+        "cached_input_tokens": 11136,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 30,
+        "reasoning_output_tokens": 23
+      },
+      "seconds": 5.153
+    },
+    "b6b731d0f4363a21": {
+      "raw_reply": "B",
+      "tool_item_types": [],
+      "usage": {
+        "input_tokens": 12612,
+        "cached_input_tokens": 9856,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 5,
+        "reasoning_output_tokens": 0
+      },
+      "seconds": 5.439
+    },
+    "ff39735deba4123b": {
+      "raw_reply": "A",
+      "tool_item_types": [],
+      "usage": {
+        "input_tokens": 13399,
+        "cached_input_tokens": 4224,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 67,
+        "reasoning_output_tokens": 60
+      },
+      "seconds": 7.04
+    },
+    "86882e4eea14a92f": {
+      "raw_reply": "B",
+      "tool_item_types": [],
+      "usage": {
+        "input_tokens": 12610,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 27,
+        "reasoning_output_tokens": 20
+      },
+      "seconds": 5.388
+    },
+    "4ccbdabc1a4b0369": {
+      "raw_reply": "C",
+      "tool_item_types": [],
+      "usage": {
+        "input_tokens": 13397,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 76,
+        "reasoning_output_tokens": 69
+      },
+      "seconds": 7.786
+    }
+  }
+}
